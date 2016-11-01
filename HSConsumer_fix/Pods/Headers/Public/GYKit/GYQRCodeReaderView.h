@@ -1,1 +1,0 @@
-../../../GYKit/Pod/Foundation/GYQRCodeReaderView.h

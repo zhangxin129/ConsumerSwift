@@ -1,8 +1,0 @@
-/***************************************************/
-/*                   商品售后模块                       */
-/***************************************************/
-"GYHE_AfterSale_PleaseEnterTheCorrectHSNumber" = "请输入正确的互生号";
-"GYHE_AfterSale_PleaseSelectStartDate" = "请选择起始日期";
-"GYHE_ReturnGoods_PleaseEnter6-digitLoginPassword" = "请输入6位登录密码";
-"GYHE_ReturnGoods_ReturnsMustBeMoreThanZero" = "退货金额须大于零";
-"GYHE_ReturnGoods_TheReturnAmountCannotBeGreaterThanTheAmountActuallyPaidForTheOrder" = "退货金额不能够大于订单实际支付的金额";
