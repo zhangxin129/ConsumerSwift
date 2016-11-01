@@ -1,0 +1,101 @@
+/***************************************************/
+/*                   购物车模块                      */
+/***************************************************/
+
+//购物车列表
+"HE_SC_CartShoppingCartTitle" = "购物车";
+"HE_SC_CartTotal" = "合计:";
+"HE_SC_CartChooseAll" = "全选";
+"HE_SC_CartAccount" = "结算";
+"HE_SC_CartDeleteFail" = "删除失败";
+"HE_SC_CartDeleteSuccess" = "删除成功";
+"HE_SC_CartConfirm" = "确定";
+"HE_SC_CartCancle" = "取消";
+"HE_SC_CartPrompt" = "提示";
+"HE_SC_CartChooseAreaTitle" = "选择营业点";
+"HE_SC_CartTotalGoods" = "共%ld件商品";
+"HE_SC_CartConfirmDeleteGood" = "确定要删除该商品吗？";
+"HE_SC_CartMaxGoodsNumber" = "所选数量不能大于%ld";
+"HE_SC_CartMinGoodsNumber" = "所选数量不能小于1";
+"HE_SC_CartSelectGoods"="请选择商品";
+"HE_SC_CartEmptyShopingNow"="购物车还是空的，马上去购物吧～";
+"HE_SC_CartGoToBuy"="去购买";
+"HE_SC_CartNetError"="网络请求失败";
+"HE_SC_Cartpleasecheckthenetwork"="请检查您的网络设置";
+"HE_SC_CartShowDiscount"="消费抵扣券";
+
+//确认订单
+"HE_SC_OrderConfirmOrderTitle" = "确认订单";
+"HE_SC_OrderSubmitOrderTitle" = "提交订单";
+"HE_SC_OrderDistributionWay" = "请选择配送方式";
+"HE_SC_OrderPaymentMethod" = "请选择支付方式";
+"HE_SC_OrderExpress" = "快递";
+"HE_SC_OrderOperatingPoint" = "营业点";
+"HE_SC_OrderApplyPresentCard" = "申请赠送互生卡";
+"HE_SC_OrderWriteInvoice" = "开具发票";
+"HE_SC_OrderInvoiceTitle" = "发票抬头";
+"HE_SC_OrderGiveMessage" = "给卖家留言";
+"HE_SC_OrderDistributionWayTitle" = "配送方式";
+"HE_SC_OrderPaymentMethodTitle" = "支付方式";
+"HE_SC_OrderInvoiceHeadPlaceHolder" = "请输入发票抬头";
+"HE_SC_OrderLeaveMessagePlaceHolder" = "请输入留言";
+"HE_SC_OrderQUPayment" = "快捷卡支付";
+"HE_SC_OrderACPayment" = "互生币支付";
+"HE_SC_OrderEPPayment" = "认证卡支付";
+"HE_SC_OrderCDPayment" = "货到付款";
+"HE_SC_OrderConfirmFailed" = "提交订单失败";
+"HE_SC_OrderReceiver" = "收货人：";
+"HE_SC_OrderReceiveAddress" = "收货地址：";
+"HE_SC_OrderPleaseSelectAddress"="请选择收货地址";
+"HE_SC_OrderNoCouponDesc" = "可用消费抵扣券为0";
+"HE_SC_OrderRealMoney" = "实付金额";
+"HE_SC_OrderConsumePoints" = "消费积分";
+"HE_SC_OrderNetError"="网络请求错误";
+
+//Others
+"GYHE_SC_ChooseOtherPaymentWay" = "选择其他支付方式";
+"GYHE_SC_HSBCreditrunningLow"="互生币支付余额不足!";
+"GYHE_SC_UserPasswordNotSet"="该用户交易密码未设置!";
+"GYHE_SC_HSBPayFailed" = "互生币支付失败";
+"GYHE_SC_HSBpaySuccess" = "互生币支付成功";
+"GYHE_SC_TransactionPasswordVerificationFailed"="交易密码输入错误";
+"GYHE_SC_TransactionPasswordNotSet"="交易密码未设置";
+"GYHE_SC_PaymentFailure" = "支付失败";
+"GYHE_SC_PaymentSuccess" = "支付成功";
+"GYHE_SC_ShoppingList" = "购物订单";
+"GYHE_SC_BuyerApplyHSCard" = "买家申请互生卡";
+"GYHE_SC_BuyerApplyHSCardWithOther" = ";买家申请互生卡";
+"GYHE_SC_DiscountInfomation" = "%@ %@张,抵¥%@";
+"GYHE_SC_DiscountInfomationDiff" = "%@%@张,抵扣%@元";
+"GYHE_SC_PaymentConfirmation" = "支付确认";
+"GYHE_SC_GetTradeDataFailed" = "获取交易数据失败!";
+"GYHE_SC_OrderPayFailed" = "订单支付失败";
+"GYHE_SC_OrderPaySuccess" = "订单支付成功";
+"GYHE_SC_OrderNotPayment" = "订单未支付";
+"GYHE_SC_RequestNetDataFailed" = "请求网络数据失败";
+"GYHE_SC_BindQuicklyCard" = "绑定快捷支付银行卡";
+"GYHE_SC_OrderPayFailureWithAgain" = "您的订单支付失败,请重试!";
+"GYHE_SC_YourOrderPaySuccess" = "您的订单支付成功!";
+"GYHE_SC_PleaseChooseQuickPayBankList" = "请选择快捷支付银行列表";
+"GYHE_SC_PleaseGetSMSCode" = "请获取验证码";
+"GYHE_SC_GetSMSCode" = "获取验证码";
+"GYHE_SC_SMSCodeError" = "验证码错误";
+"GYHE_SC_SMSCodeSendFailed" = "验证码发送失败";
+"GYHE_SC_SMSCodeSendSuccess" = "验证码发送成功";
+"GYHE_SC_GetBatchNoFailed" = "获取批次号失败!";
+"GYHE_SC_DontGetBatchNo" = "无法获取批次号!";
+"GYHE_SC_POSThisDealIsPaid" = "此交易已经支付";
+"GYHE_OrderSubmitSuccessAndPleasePay" = "订单提交成功,请您尽快付款!";
+"GYHE_SC_PleaseInputSMSCode" = "请输入短信验证码";
+"GYHE_SC_SMSCode" = "短信验证码";
+"GYHE_SC_InputSMSCode" = "输入短信验证码";
+"GYHE_SC_PaymentRightAway" = "立即付款";
+"GYHE_SC_SubmitOrderFaild"="订单提交失败!";
+"GYHE_SC_PaymentAmount" = "支付金额";
+"GYHE_SC_OrderAmount" = "订单金额";
+"GYHE_SC_OrderNumber" = "订单号";
+"GYHE_SC_ChooseOtherPayWay" = "选择其它支付方式";
+"GYHE_SC_Coupon" = "抵扣券";
+"GYHE_SC_AccountNotEnoughToChooseOtherWay" = "您的互生币账户余额不足,请选择其它支付方式";
+"GYHE_SC_PleaseInputEightPassword" = "请输入8位交易密码";
+"GYHE_SC_ServiceUnavailability" = "服务不可用";

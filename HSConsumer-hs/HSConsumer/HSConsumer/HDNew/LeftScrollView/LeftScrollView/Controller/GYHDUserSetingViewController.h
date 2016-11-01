@@ -1,0 +1,23 @@
+//
+//  GYHDUserSetingViewController.h
+//  HSConsumer
+//
+//  Created by shiang on 16/1/9.
+//  @深圳市归一科技研发有限公司_iOS
+//  @版权所有  禁止传播
+//  @级别：绝密
+//  Copyright © 2016年 SHENZHEN GUIYI SCIENCE AND TECHNOLOGY DEVELOP CO.,LTD. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+typedef NS_ENUM(NSUInteger ,EditType) {
+    EditName = 1,
+    EditNote = 2
+};
+
+@interface GYHDUserSetingViewController : GYViewController
+
+@property (nonatomic, assign)BOOL haveToRefresh;
+
+@end

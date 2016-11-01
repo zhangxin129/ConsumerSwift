@@ -1,0 +1,66 @@
+/***************************************************/
+/*                   轻松购模块                      */
+/***************************************************/
+"GYHE_Easybuy_basicParameters"="基本参数";
+"GYHE_Easybuy_time"="时间";
+"GYHE_Easybuy_no_evaluation"="暂无相关评价";
+"GYHE_Easybuy_evaluateion_commnet" = "评价详情";
+"GYHE_Easybuy_all" = "全部";
+"GYHE_Easybuy_good_comments" = "好评";
+"GYHE_Easybuy_bad_comments" = "差评";
+"GYHE_Easybuy_buyCount"="购买数量";
+"GYHE_Easybuy_maxnum"="最大购买数量为";
+"GYHE_Easybuy_less_buy"="最小购买数量为1";
+"GYHE_Easybuy_ticket" = "消费抵扣券";
+"GYHE_Easybuy_delivery_on_time" = "即时送达";
+"GYHE_Easybuy_delivery_home" = "送货上门";
+"GYHE_Easybuy_cash_on_delivery" = "货到付款";
+"GYHE_Easybuy_get_by_yourself" = "门店自提";
+"GYHE_Easybuy_didCollection"="已收藏";
+"GYHE_Easybuy_collection"="收藏";
+"GYHE_Easybuy_freeShipping"="免运费";
+"GYHE_Easybuy_expressFee"="快递费";
+"GYHE_Easybuy_totalSales"="总销量";
+"GYHE_Easybuy_enterShops"="进入商铺";
+"GYHE_Easybuy_contact_shop" = "联系客服";
+"GYHE_Easybuy_buy_now" = "立即购买";
+"GYHE_Easybuy_add_into_cart" = "加入购物车";
+"GYHE_Easybuy_selectOperations"="选择营业点";
+"GYHE_Easybuy_select"="选择";
+"GYHE_Easybuy_goodsEvaluateion"="商品评价";
+"GYHE_Easybuy_didSelected"="已选择";
+"GYHE_Easybuy_collectionSuccess"="收藏成功";
+"GYHE_Easybuy_moreToMaxNum"="商品超出最大购买数量";
+"GYHE_Easybuy_goodsUnderFrame"="该商品已经下架";
+"GYHE_Easybuy_shopClocePleaseTryLater"="商铺已关闭，请稍后再试";
+"GYHE_Easybuy_evaluation"="(%@条评价)";
+"GYHE_Easybuy_selectGoodsParam"= "请选择商品属性";
+"GYHE_Easybuy_continueDragShowDetails"="继续拖动,查看图文详情";
+"GYHE_Easybuy_releaseBackDetail"="释放,返回商品详情";
+"GYHE_Easybuy_downBackDetail"="下拉,返回商品详情";
+"GYHE_Easybuy_good_detail" = "商品详情";
+"GYHE_Easybuy_sort"="排序";
+"GYHE_Easybuy_sellerService"="卖家服务";
+"GYHE_Easybuy_NoSearchRelevantProductData"="没有搜到相关商品数据!";
+"GYHE_Easybuy_inputGoodShop"="输入商品、商铺";
+"GYHE_Easybuy_pleaseEnterSearchGoods"="请输入商品名称";
+"GYHE_Easybuy_pleaseEnterSearchShops"="输入商铺名 企业互生号";
+"GYHE_Easybuy_intelligent_sorting" = "智能排序";
+"GYHE_Easybuy_goods" = "商品";
+"GYHE_Easybuy_shops" = "商铺";
+"GYHE_Easybuy_maxLengthIs100"="最大长度为100";
+"GYHE_Easybuy_search"="搜索";
+"GYHE_Easybuy_NoSearchRelevantShops"="没有搜到相关商铺数据!";
+"GYHE_Easybuy_clearSearchHistory"="清除搜索历史";
+"GYHE_Easybuy_HS_card_number" = "互生号";
+"GYHE_Easybuy_good_evaluation" = "好评";
+"GYHE_Easybuy_sure" = "确定";
+"GYHE_Easybuy_chooseArea" = "选择营业点";
+"GYHE_Easybuy_cancel" = "取消";
+"GYHE_Easybuy_call"="呼叫";
+"GYHE_Easybuy_addCartSuccess"="加入购物车成功";
+"GYHE_Easybuy_pleaseEnterSearchShop"="请输入商铺名称";
+"GYHE_Easybuy_total_count"="总销量:%@";
+
+
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GYHEMapSelectAddressHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eF-vc-hfa">
+                    <rect key="frame" x="0.0" y="0.0" width="347" height="52"/>
+                    <subviews>
+                        <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7r-yP-RW1">
+                            <rect key="frame" x="15" y="10" width="317" height="32"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="INV-3u-CRb"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ua-5k-gy9">
+                            <rect key="frame" x="45" y="15" width="287" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="jtm-TZ-0Gs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gyhe_search_gray" translatesAutoresizingMaskIntoConstraints="NO" id="z12-E6-lLJ">
+                            <rect key="frame" x="24" y="18" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="405-Rm-Jos"/>
+                                <constraint firstAttribute="width" constant="16" id="qFc-ja-4ul"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="z12-E6-lLJ" firstAttribute="leading" secondItem="7eF-vc-hfa" secondAttribute="leading" constant="24" id="2Jx-RK-EtZ"/>
+                        <constraint firstItem="y7r-yP-RW1" firstAttribute="top" secondItem="7eF-vc-hfa" secondAttribute="top" constant="10" id="Gvy-Ig-qyn"/>
+                        <constraint firstAttribute="height" constant="52" id="WJ8-RB-HKp"/>
+                        <constraint firstItem="4ua-5k-gy9" firstAttribute="leading" secondItem="7eF-vc-hfa" secondAttribute="leading" constant="45" id="X4z-iP-q7c"/>
+                        <constraint firstItem="4ua-5k-gy9" firstAttribute="top" secondItem="7eF-vc-hfa" secondAttribute="top" constant="15" id="Xu7-ms-7w4"/>
+                        <constraint firstAttribute="trailing" secondItem="4ua-5k-gy9" secondAttribute="trailing" constant="15" id="fOg-z2-EWR"/>
+                        <constraint firstItem="z12-E6-lLJ" firstAttribute="top" secondItem="7eF-vc-hfa" secondAttribute="top" constant="18" id="ohu-eG-8M3"/>
+                        <constraint firstItem="y7r-yP-RW1" firstAttribute="leading" secondItem="7eF-vc-hfa" secondAttribute="leading" constant="15" id="sTF-i2-PVe"/>
+                        <constraint firstAttribute="trailing" secondItem="y7r-yP-RW1" secondAttribute="trailing" constant="15" id="ynF-1G-mcm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7eF-vc-hfa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7f1-Uc-WEY"/>
+                <constraint firstAttribute="trailing" secondItem="7eF-vc-hfa" secondAttribute="trailing" id="FPj-Ul-IWK"/>
+                <constraint firstItem="7eF-vc-hfa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mIu-J8-X22"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="searchLocalTextField" destination="4ua-5k-gy9" id="mgW-yg-h83"/>
+                <outlet property="textFieldBackView" destination="y7r-yP-RW1" id="HWZ-qH-n8i"/>
+            </connections>
+            <point key="canvasLocation" x="279.5" y="-86"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gyhe_search_gray" width="19" height="20"/>
+    </resources>
+</document>

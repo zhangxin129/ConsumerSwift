@@ -1,0 +1,81 @@
+{
+    "currentPageIndex" : 1,
+    "data" : [
+              {
+              "items" : [
+                         {
+                         "detailTime" : "09-09 12:00",
+                         "orderDetailId" : "22817515305649153",
+                         "price" : 2388,
+                         "pv" : 122,
+                         "type" : "0",
+                         "statu" : "0",
+                         "time" : "桃红赛亚色",
+                         "title" : "喀什蓝坦克汽车制造",
+                         "url" : "http://192.168.229.31:9099/v1/tfs/T1tX_TB4JT1RXrhCrK.jpg"
+                         }
+                         ],
+              "shopName" : "德国大炮制造公司",
+              "shopUrl" : "http://192.168.229.31:9099/v1/tfs/T1VN_TB4WT1RXrhCrK.jpg",
+              "status" : "1"
+              },
+              {
+              "items" : [
+                         {
+                         "detailTime" : "09-04 15:30",
+                         "orderDetailId" : "22817515305649153",
+                         "price" : 2398,
+                         "pv" : 192,
+                         "type" : "0",
+                         "statu" : "1",
+                         "time" : "颜色:银可黄马褂",
+                         "title" : "雷军小米飞机大炮",
+                         "url" : "http://192.168.229.31:9099/v1/tfs/T1Hz_TB4bT1RXrhCrK.jpg"
+                         }
+                         ],
+              "shopName" : "小米加步枪公司",
+              "shopUrl" : "http://192.168.229.31:9099/v1/tfs/T1VN_TB4WT1RXrhCrK.jpg",
+              "status" : "2"
+              },
+              {
+              "items" : [
+                         {
+                         "detailTime" : "09-06 15:32",
+                         "orderDetailId" : "22817515305649153",
+                         "price" : 108,
+                         "pv" : 820,
+                         "type" : "0",
+                         "statu" : "2",
+                         "time" : "颜色:银可黑带",
+                         "title" : "皮包lv砖石牌",
+                         "url" : "http://192.168.229.31:9099/v1/tfs/T1VN_TB4WT1RXrhCrK.jpg"
+                         }
+                         ],
+              "shopName" : "马拉松坦克公司",
+              "shopUrl" : "http://192.168.229.31:9099/v1/tfs/T1VN_TB4WT1RXrhCrK.jpg",
+              "status" : "3"
+              },
+              {
+              "items" : [
+                         {
+                         "detailTime" : "09-04 15:30",
+                         "orderDetailId" : "22817515305649153",
+                         "price" : 2318,
+                         "pv" : 123,
+                         "type" : "0",
+                         "statu" : "3",
+                         "time" : "颜色:银可红红红红",
+                         "title" : "苏三战斗机玩具一架",
+                         "url" : "http://192.168.229.31:9099/v1/tfs/T1Hz_TB4bT1RXrhCrK.jpg"
+                         }
+                         ],
+              "shopName" : "伊拉克和平使者",
+              "shopUrl" : "http://192.168.229.31:9099/v1/tfs/T1VN_TB4WT1RXrhCrK.jpg",
+              "status" : "0"
+              }
+              ],
+    "msg" : null,
+    "retCode" : 200,
+    "rows" : 18,
+    "totalPage" : 2
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ViewTipBkgView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="291"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hw-LH-711">
+                    <rect key="frame" x="0.0" y="35" width="320" height="140"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sorry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oO-mY-FhE">
+                            <rect key="frame" x="20" y="68" width="280" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_no_result.png" translatesAutoresizingMaskIntoConstraints="NO" id="waU-4w-d0h">
+                            <rect key="frame" x="140" y="8" width="40" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="gW2-om-4Ea"/>
+                                <constraint firstAttribute="height" constant="45" id="hj8-sI-eeX"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="waU-4w-d0h" firstAttribute="centerX" secondItem="4Hw-LH-711" secondAttribute="centerX" id="1kf-Gk-cbs"/>
+                        <constraint firstItem="0oO-mY-FhE" firstAttribute="leading" secondItem="4Hw-LH-711" secondAttribute="leading" constant="20" id="7M6-Gx-6lg"/>
+                        <constraint firstAttribute="bottom" secondItem="0oO-mY-FhE" secondAttribute="bottom" id="V4s-ZB-KXI"/>
+                        <constraint firstItem="waU-4w-d0h" firstAttribute="top" secondItem="4Hw-LH-711" secondAttribute="top" constant="8" id="btz-s2-JgA"/>
+                        <constraint firstAttribute="trailing" secondItem="0oO-mY-FhE" secondAttribute="trailing" constant="20" id="lNH-a8-1Db"/>
+                        <constraint firstAttribute="height" constant="140" id="nIN-Bb-DM5"/>
+                        <constraint firstItem="0oO-mY-FhE" firstAttribute="top" secondItem="waU-4w-d0h" secondAttribute="bottom" constant="15" id="wGA-z3-d0N"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="V4s-ZB-KXI"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4Hw-LH-711" secondAttribute="trailing" id="H7S-uC-ffy"/>
+                <constraint firstItem="4Hw-LH-711" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ckW-Vy-0jS"/>
+                <constraint firstItem="4Hw-LH-711" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="r9O-b2-n2c"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ivTipImage" destination="waU-4w-d0h" id="Flx-EC-ALh"/>
+                <outlet property="lbTip" destination="0oO-mY-FhE" id="2RE-aP-BHk"/>
+            </connections>
+            <point key="canvasLocation" x="341" y="318.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_no_result.png" width="103" height="118"/>
+    </resources>
+</document>

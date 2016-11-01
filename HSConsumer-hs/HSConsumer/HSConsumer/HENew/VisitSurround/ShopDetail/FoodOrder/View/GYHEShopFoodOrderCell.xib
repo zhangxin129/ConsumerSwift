@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="GYHEShopFoodOrderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="香辣卤素" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3Y-lQ-gMa">
+                        <rect key="frame" x="15" y="10" width="48" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.25098039215686274" green="0.18823529411764706" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gyhe_shop_good_coin" translatesAutoresizingMaskIntoConstraints="NO" id="a7u-oX-3Kv">
+                        <rect key="frame" x="15" y="26" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="Eri-Ty-dkW"/>
+                            <constraint firstAttribute="height" constant="16" id="K0v-s5-i4q"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gyhe_shop_good_pv" translatesAutoresizingMaskIntoConstraints="NO" id="GkW-IW-otV">
+                        <rect key="frame" x="182" y="26" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="0Js-aX-8iQ"/>
+                            <constraint firstAttribute="width" constant="16" id="Ivd-Xc-7HG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNp-8N-Qzi">
+                        <rect key="frame" x="200" y="26" width="19" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.1137254902" green="0.49019607840000001" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1w-yC-flc">
+                        <rect key="frame" x="293" y="17" width="12" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5I-bf-CpQ">
+                        <rect key="frame" x="33" y="26" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M3Y-lQ-gMa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2cb-Wc-JlY"/>
+                    <constraint firstAttribute="bottom" secondItem="a7u-oX-3Kv" secondAttribute="bottom" constant="7" id="8Rm-dL-7vO"/>
+                    <constraint firstItem="GkW-IW-otV" firstAttribute="leading" secondItem="d5I-bf-CpQ" secondAttribute="trailing" constant="153" id="IU9-f6-eDJ"/>
+                    <constraint firstItem="a7u-oX-3Kv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Iaz-Pq-M09"/>
+                    <constraint firstItem="d5I-bf-CpQ" firstAttribute="leading" secondItem="a7u-oX-3Kv" secondAttribute="trailing" constant="2" id="KE6-49-Ch1"/>
+                    <constraint firstItem="d5I-bf-CpQ" firstAttribute="centerY" secondItem="a7u-oX-3Kv" secondAttribute="centerY" id="Q3s-ws-M28"/>
+                    <constraint firstItem="c1w-yC-flc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VfT-AL-IqN"/>
+                    <constraint firstItem="qNp-8N-Qzi" firstAttribute="leading" secondItem="GkW-IW-otV" secondAttribute="trailing" constant="2" id="YcM-lG-YVQ"/>
+                    <constraint firstItem="qNp-8N-Qzi" firstAttribute="centerY" secondItem="a7u-oX-3Kv" secondAttribute="centerY" id="amg-N8-8jd"/>
+                    <constraint firstItem="GkW-IW-otV" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="30" id="fLZ-Um-OMe"/>
+                    <constraint firstAttribute="trailing" secondItem="c1w-yC-flc" secondAttribute="trailing" constant="15" id="h1Z-km-jeD"/>
+                    <constraint firstItem="GkW-IW-otV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="153" id="iBL-T5-gze"/>
+                    <constraint firstItem="GkW-IW-otV" firstAttribute="centerY" secondItem="qNp-8N-Qzi" secondAttribute="centerY" id="pRY-tg-0AZ"/>
+                    <constraint firstItem="M3Y-lQ-gMa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="s34-kQ-bBJ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="IU9-f6-eDJ"/>
+                        <exclude reference="iBL-T5-gze"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="261" y="114"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gyhe_shop_good_coin" width="16" height="16"/>
+        <image name="gyhe_shop_good_pv" width="16" height="16"/>
+    </resources>
+</document>

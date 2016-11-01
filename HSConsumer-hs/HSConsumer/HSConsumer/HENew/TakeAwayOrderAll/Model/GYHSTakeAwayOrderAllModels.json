@@ -1,0 +1,40 @@
+{
+  "data" : {
+    "1101" : [
+      {
+        "areaCode" : "1101",
+        "id" : "1",
+        "landmark" : "40.000114,116.429867",
+        "locationName" : "安定门"
+      },
+      {
+        "areaCode" : "1101",
+        "id" : "15",
+        "landmark" : "39.885883,116.412885",
+        "locationName" : "天坛"
+      },
+      {
+        "areaCode" : "1101",
+        "id" : "16",
+        "landmark" : "39.922351,116.418174",
+        "locationName" : "王府井/东单"
+      },
+      {
+        "areaCode" : "1101",
+        "id" : "17",
+        "landmark" : "39.953847,116.423566",
+        "locationName" : "雍和宫"
+      }
+    ],
+    "440902" : [
+      {
+        "areaCode" : "440902",
+        "id" : "6341",
+        "landmark" : "21.663887,110.930305",
+        "locationName" : "华侨城"
+      }
+    ]
+  },
+  "msg" : "20161008",
+  "retCode" : 200
+}

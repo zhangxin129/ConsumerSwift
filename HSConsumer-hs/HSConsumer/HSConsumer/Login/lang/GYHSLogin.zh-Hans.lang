@@ -1,0 +1,72 @@
+/***************************************************/
+/*                   登录模块                       */
+/***************************************************/
+
+"GYHS_Login_Title" = "登录";
+
+"GYHS_Login_Enter_11_Number" = "输入11位互生号";
+"GYHS_Login_Enter_Hs_Number" = "输入互生号";
+"GYHS_Login_Enter_Login_Password"="输入6位登录密码";
+
+"GYHS_Login_No_Card_Login"="非持卡人登录";
+"GYHS_Login_Hs_Card_Login"="互生号登录";
+
+"GYHS_Login_Card_Holder_Login"="持卡人登录";
+"GYHS_Login_Forget_Pwd"="忘记密码?";
+
+"GYHS_Login_Register"="注册";
+"GYHS_Login_Input_Phone_Number" = "输入手机号";
+
+"GYHS_Login_User_Name_Empty" = "用户名或密码为空！";
+"GYHS_Login_Passwrod_Not_6_Number" = "密码不为6个字符！";
+
+"GYHS_Login_Failed_To_Login" = "登录失败！";
+
+"GYHS_Login_Registe" = "注册";
+"GYHS_Login_Phone_Number" = "手机号";
+"GYHS_Login_Verification_Code" = "验证码";
+"GYHS_Login_SMS_Verification_Code" = "短信验证码";
+"GYHS_Login_Input_Verification_Code" = "输入验证码";
+"GYHS_Login_Get_Verification_Code" = "获取验证码";
+
+"GYHS_Login_Password" = "密码";
+"GYHS_Login_Input_Password" = "请输入密码";
+"GYHS_Login_Confirm_Pwd" = "确认密码";
+"GYHS_Login_Input_Pwd_Repeat" = "重复输入密码";
+"GYHS_Login_Please_Input_Phone_Number" = "输入手机号";
+
+"GYHS_Login_Failed_To_Get_Data" = "从网络获取数据失败！";
+"GYHS_Login_Validationed_Please_Find"="验证码已经发送，请注意查收。";
+"GYHS_Login_Please_Input_Right_Iphone"="请输入正确的手机号码";
+"GYHS_Login_Please_Enter_Correct_Verification_Code"="请输入正确的验证码";
+"GYHS_Login_Password_Not_Agree"="两次输入的密码不一致";
+"GYHS_Login_Please_Input_6_Password"="请输入6位确认数字密码";
+"GYHS_Login_Registered_Successed"="注册成功";
+"GYHS_Login_Validation_Error"="验证码不正确";
+"GYHS_Login_Existing_Account"="账户已存在";
+"GYHS_Login_Failed_Registered"="注册失败";
+"GYHS_Login_Method_For_Find_Pwd"="登录密码找回方式";
+"GYHS_Login_Pwd_Prompt_Question" = "密保问题";
+"GYHS_Login_Email" = "邮箱";
+"GYHS_Login_Input_Email_Code" = "输入邮箱号";
+"GYHS_Login_Hs_Card_Number"="互生号";
+"GYHS_Login_Phone_Numbers" = "手机号码";
+"GYHS_Login_Question" = "问题";
+"GYHS_Login_Answer" = "答案";
+"GYHS_Login_Input_Answer" = "输入答案";
+"GYHS_Login_Select_Pwd_Answer" = "选择问题";
+"GYHS_Login_Confirm" = "确定";
+"GYHS_Login_Please_Input_HS_Number11"="请输入11位合法的互生号";
+"GYHS_Login_Validation_Check_Operation_Failed"="验证码校验操作失败";
+"GYHS_Login_Network_Error" = "网络请求错误";
+"GYHS_Login_Verify_Email_Has_Sent"="验证邮件已发送至";
+"GYHS_Login_Please_Question"="请选择问题";
+"GYHS_Login_Please_Input_Right_Email"="请输入正确的邮箱";
+"GYHS_Login_Login_complete" = "登录成功";
+"GYHS_Login_Universally_synchronousError" = "请求失败";
+"GYHS_Login_PleaseLogMailboxRetrievePpassword"="请及时登录邮箱进行密码修改";
+"GYHS_Login_SettingEnviroument"="设置环境";
+"GYHS_Login_MailboxNoExist"="邮箱不存在";
+"GYHS_Login_ResetPasswordSuccess"="重置密码成功";
+"GYHS_Login_Choose_Encrypted_Problem"="选择密保问题";
+

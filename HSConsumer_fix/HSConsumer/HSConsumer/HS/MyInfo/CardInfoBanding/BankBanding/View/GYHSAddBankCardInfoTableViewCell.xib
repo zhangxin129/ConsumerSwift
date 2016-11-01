@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="Uv8-eL-BoE" customClass="GYHSAddBankCardInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uv8-eL-BoE" id="bqN-YD-X2W">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf0-Oe-BE5">
+                        <rect key="frame" x="11" y="11" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Vcs-PI-zed"/>
+                            <constraint firstAttribute="width" constant="80" id="ad3-fZ-iOZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XMi-kX-D8R">
+                        <rect key="frame" x="99" y="12" width="160" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="XHt-vr-svx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNF-sf-aZp">
+                        <rect key="frame" x="265" y="1" width="48" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="aM9-6l-be5"/>
+                            <constraint firstAttribute="height" constant="40" id="mOA-n3-wiV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <connections>
+                            <action selector="imageButtonAction:" destination="Uv8-eL-BoE" eventType="touchUpInside" id="nTM-YZ-TuK"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hs_img_bank_icon" translatesAutoresizingMaskIntoConstraints="NO" id="kc4-LG-nbr">
+                        <rect key="frame" x="270" y="11" width="35" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="lOJ-0w-1cy"/>
+                            <constraint firstAttribute="height" constant="22" id="rEr-d6-bo8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XMi-kX-D8R" firstAttribute="leading" secondItem="Hf0-Oe-BE5" secondAttribute="trailing" constant="8" id="0OZ-F2-8zv"/>
+                    <constraint firstItem="Hf0-Oe-BE5" firstAttribute="top" secondItem="bqN-YD-X2W" secondAttribute="top" constant="11" id="LKb-wb-314"/>
+                    <constraint firstAttribute="trailing" secondItem="XNF-sf-aZp" secondAttribute="trailing" constant="7" id="Lij-0M-jJs"/>
+                    <constraint firstItem="kc4-LG-nbr" firstAttribute="top" secondItem="bqN-YD-X2W" secondAttribute="top" constant="11" id="Pa9-uP-MeH"/>
+                    <constraint firstItem="XNF-sf-aZp" firstAttribute="top" secondItem="bqN-YD-X2W" secondAttribute="top" constant="1" id="VVK-iu-AOS"/>
+                    <constraint firstItem="XNF-sf-aZp" firstAttribute="leading" secondItem="XMi-kX-D8R" secondAttribute="trailing" constant="6" id="YfW-nx-3wb"/>
+                    <constraint firstAttribute="trailing" secondItem="kc4-LG-nbr" secondAttribute="trailing" constant="15" id="fLE-I7-xj3"/>
+                    <constraint firstItem="Hf0-Oe-BE5" firstAttribute="leading" secondItem="bqN-YD-X2W" secondAttribute="leading" constant="11" id="ocR-FV-g1u"/>
+                    <constraint firstItem="XMi-kX-D8R" firstAttribute="top" secondItem="bqN-YD-X2W" secondAttribute="topMargin" constant="4" id="rkV-pP-e7W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgBtnImageView" destination="kc4-LG-nbr" id="Lo0-KH-JvJ"/>
+                <outlet property="imageHeight" destination="rEr-d6-bo8" id="BUN-o4-FE2"/>
+                <outlet property="imageWidth" destination="lOJ-0w-1cy" id="jA1-Om-gQB"/>
+                <outlet property="nameLable" destination="Hf0-Oe-BE5" id="8jq-kR-5GI"/>
+                <outlet property="selectButton" destination="XNF-sf-aZp" id="xol-cG-phb"/>
+                <outlet property="selectButtonWidth" destination="aM9-6l-be5" id="xEc-jF-MBm"/>
+                <outlet property="valueTextField" destination="XMi-kX-D8R" id="XKf-zw-zNd"/>
+            </connections>
+            <point key="canvasLocation" x="416" y="190"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hs_img_bank_icon" width="35" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,44 @@
+/***************************************************/
+/*                   商品详情                        */
+/***************************************************/
+
+"GYHE_Good_Collect_Success" = "收藏成功";
+"GYHE_Good_Cancel_Collect_Success" = "取消收藏成功";
+"GYHE_Good_Number_Beyond_Scope" = "数量超出范围";
+"GYHE_Good_Select" = "选择";
+"GYHE_Good_Did_Select" = "已选:";
+"GYHE_Good_Please_Choose" = "请选择";
+"GYHE_Good_Color" = "颜色";
+"GYHE_Good_Size" = "尺码";
+"GYHE_Good_Confirm" = "确定";
+"GYHE_Good_Share" = "分享";
+"GYHE_Good_Collect" = "收藏";
+"GYHE_Good_Enter_Store" = "进入店铺";
+"GYHE_Good_Continue_Drag_Check_Image_Text_Detail" = "继续拖动,查看图文详情";
+"GYHE_Good_Product_Paramters" = "产品参数";
+"GYHE_Good_Drop_Down_Back_To_Good_Introduction" = "下拉，返回商品简介";
+"GYHE_Good_Number_Of_Buy" = "购买数量";
+
+
+/***************************************************/
+/*                   周边逛首页                        */
+/***************************************************/
+
+"GYHE_Main_Search" = "搜索";
+"GYHE_Main_Near" = "附近";
+"GYHE_Main_Food" = "餐饮";
+"GYHE_Main_Life_Service" = "生活服务";
+"GYHE_Main_Have_Fun" = "休闲娱乐";
+"GYHE_Main_Tourist_Hotel" = "旅游酒店";
+"GYHE_Main_House" = "房产";
+"GYHE_Main_Take_Out_Channel" = "外卖上门频道";
+"GYHE_Main_Surrounding" = "周边";
+"GYHE_Main_Meal_Type" = "餐品";
+"GYHE_Main_Daily_Necessities" = "日用品";
+"GYHE_Main_Service" = "服务";
+
+
+
+
+
+

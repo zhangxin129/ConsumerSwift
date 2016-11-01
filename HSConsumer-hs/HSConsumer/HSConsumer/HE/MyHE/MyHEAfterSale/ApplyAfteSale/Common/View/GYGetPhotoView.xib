@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GYGetPhotoView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLc-mH-8QW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="nGf-P7-T2j"/>
+                    </constraints>
+                    <state key="normal" title="拍照">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40m-ew-ltC">
+                    <rect key="frame" x="0.0" y="50" width="320" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="mY6-h7-dpd"/>
+                    </constraints>
+                    <state key="normal" title="从相册选取">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLr-dp-eji">
+                    <rect key="frame" x="0.0" y="105" width="320" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="c3f-1W-8am"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J47-TT-sc4">
+                    <rect key="frame" x="0.0" y="100" width="320" height="5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdX-aL-IEt" userLabel="line">
+                    <rect key="frame" x="0.0" y="50" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Ph9-pb-sPZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kLc-mH-8QW" secondAttribute="trailing" id="1bE-Hv-qus"/>
+                <constraint firstAttribute="trailing" secondItem="HLr-dp-eji" secondAttribute="trailing" id="23x-qH-5DJ"/>
+                <constraint firstItem="QdX-aL-IEt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="6gU-Vf-BaD"/>
+                <constraint firstAttribute="trailing" secondItem="40m-ew-ltC" secondAttribute="trailing" id="8m4-wf-qOn"/>
+                <constraint firstItem="40m-ew-ltC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BUM-Cb-o4K"/>
+                <constraint firstItem="J47-TT-sc4" firstAttribute="top" secondItem="40m-ew-ltC" secondAttribute="bottom" id="JUC-RI-V0a"/>
+                <constraint firstItem="kLc-mH-8QW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KEP-AR-q2i"/>
+                <constraint firstAttribute="bottom" secondItem="HLr-dp-eji" secondAttribute="bottom" id="Oe9-b2-dih"/>
+                <constraint firstItem="J47-TT-sc4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RL9-WP-LX7"/>
+                <constraint firstItem="kLc-mH-8QW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vja-3E-nFu"/>
+                <constraint firstItem="40m-ew-ltC" firstAttribute="top" secondItem="kLc-mH-8QW" secondAttribute="bottom" id="WeJ-Uw-b7r"/>
+                <constraint firstItem="HLr-dp-eji" firstAttribute="top" secondItem="J47-TT-sc4" secondAttribute="bottom" id="XRJ-0c-ftr"/>
+                <constraint firstAttribute="trailing" secondItem="J47-TT-sc4" secondAttribute="trailing" id="Yog-4g-ZVt"/>
+                <constraint firstItem="HLr-dp-eji" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dHA-it-gIo"/>
+                <constraint firstItem="QdX-aL-IEt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jGM-z2-isw"/>
+                <constraint firstAttribute="trailing" secondItem="QdX-aL-IEt" secondAttribute="trailing" id="tf5-CF-Fop"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgColor" destination="J47-TT-sc4" id="ar4-JW-I5V"/>
+                <outlet property="cancelBtn" destination="HLr-dp-eji" id="qzk-Hh-und"/>
+                <outlet property="getBlumBtn" destination="40m-ew-ltC" id="mgP-ZR-B9T"/>
+                <outlet property="takePhotoBtn" destination="kLc-mH-8QW" id="re6-RI-1q1"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="296.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,34 @@
+/***************************************************/
+/*                   通用设置                        */
+/***************************************************/
+
+"GYHS_General_AboutTheAlternateContent" = "        互生消费积分管理平台是以\"资源整合、互利共赢\"为主要内涵,通过互生网络系统建立起科技、金融、企业和消费者为一体的新型的消费权益再分配模式,全面整合社会资源、集资源共享、利益共享、金融流通、商务流通、信息交流、广告宣传、消费增值为一身,满足多方需求,用一卡通用积分帮助消费者建立商务流通利益共同体,用互生网络系统将消费积分进行汇集和应用,给消费者带来消费增值,最终实现消费者消费增值的永续保障。";
+"GYHS_General_PlatformHotline" = "平台热线";
+"GYHS_General_PlatformEmail" = "平台邮箱";
+"GYHS_General_PlatformAddress" = "平台地址";
+"GYHS_General_AccountName" = "户名";
+"GYHS_General_OpenAnAccountbank" = "开户行";
+"GYHS_General_Account" = "账户";
+"GYHS_General_ShenzhenFutianDistrictFuZhongRoadProspectingInstituteBuilding7" = "深圳市福田区福中路深圳市勘察研究院7栋";
+"GYHS_General_ShenzhenINTERGROWTHTechnologyCOLTD" = "深圳市互生科技有限公司";
+"GYHS_General_TheBankOfChinaShenzhenZhongxingBranch" = "中国银行深圳中兴支行";
+"GYHS_General_Settings" = "通用设置";
+"GYHS_General_Log_Out" = "退出登录";
+"GYHS_General_Help" = "帮助中心";
+"GYHS_General_About_HS" = "关于互生";
+"GYHS_General_WhetherToDownLoad" = "是否要前往下载？";
+"GYHS_General_SuccessExit" = "退出成功";
+"GYHS_General_Confirm_To_Log_Out" = "确定要退出登录吗？";
+"GYHS_General_Cancel" = "取消";
+"GYHS_General_Confirm" = "确定";
+"GYHS_General_Customer_Service_Telephone" = "客服电话";
+"GYHS_General_Version_Check" = "版本号";
+"GYHS_General_MyQrCode" = "我的二维码";
+"GYHS_General_Company_Download" = "互生企业APP下载";
+"GYHS_General_Clear_Cache" = "清理缓存";
+"GYHS_General_Chinese_Simplified" = "中文简体";
+"GYHS_General_Chinese_Traditional" = "中文繁体";
+"GYHS_General_English" = "英文";
+"GYHS_General_Change_Language_Now" = "正在切换语言";
+
+

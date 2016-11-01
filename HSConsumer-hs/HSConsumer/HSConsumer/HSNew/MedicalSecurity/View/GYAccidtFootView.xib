@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GYAccidtFootView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="116-S6-hC4">
+                    <rect key="frame" x="14" y="10" width="186" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Zm7-fP-cYk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGX-Re-rYD">
+                    <rect key="frame" x="210" y="10" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="fEU-7f-dHU"/>
+                        <constraint firstAttribute="width" constant="100" id="oje-2q-Y0R"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="0.97161760060000002" green="0.1184463137" blue="0.127221158" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="OeP-Hh-38f"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ur-ax-OjI">
+                    <rect key="frame" x="20" y="42" width="280" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="4Lm-X2-9ax"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="gyhs_nextbtn">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="pAm-mG-xjo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0ur-ax-OjI" firstAttribute="top" secondItem="bGX-Re-rYD" secondAttribute="bottom" constant="11" id="9qF-rt-3ec"/>
+                <constraint firstItem="116-S6-hC4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="Z87-rM-Eym"/>
+                <constraint firstAttribute="trailing" secondItem="0ur-ax-OjI" secondAttribute="trailing" constant="20" id="bOE-aD-kgi"/>
+                <constraint firstItem="bGX-Re-rYD" firstAttribute="leading" secondItem="116-S6-hC4" secondAttribute="trailing" constant="10" id="bkB-nD-5WG"/>
+                <constraint firstAttribute="trailing" secondItem="bGX-Re-rYD" secondAttribute="trailing" constant="10" id="ftx-EH-iMl"/>
+                <constraint firstItem="bGX-Re-rYD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="n3h-MC-GmE"/>
+                <constraint firstItem="116-S6-hC4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="w3k-Sb-SuF"/>
+                <constraint firstItem="0ur-ax-OjI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="x7E-ul-vSk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="applyImmediatelyBtn" destination="0ur-ax-OjI" id="jZQ-mh-tYV"/>
+                <outlet property="lbNeed" destination="116-S6-hC4" id="K1h-eC-4sg"/>
+                <outlet property="proveSuggestBtn" destination="bGX-Re-rYD" id="9g4-RF-Fj0"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="gyhs_nextbtn" width="672" height="82"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GYHSIntegralCodeViewController">
+            <connections>
+                <outlet property="QRCodeImageView" destination="Uql-23-oqG" id="NBL-kT-b7V"/>
+                <outlet property="barCodeImageView" destination="w7K-wM-UFQ" id="AYb-2S-Qv7"/>
+                <outlet property="cardNumLabel" destination="PzD-FO-cz0" id="lSM-AL-AEi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzD-FO-cz0">
+                    <rect key="frame" x="15" y="77" width="345" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="1Ji-H3-nVM"/>
+                        <constraint firstAttribute="width" constant="171" id="LXw-PX-lpJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="LXw-PX-lpJ"/>
+                        </mask>
+                    </variation>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uql-23-oqG">
+                    <rect key="frame" x="92" y="105" width="190" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Uql-23-oqG" secondAttribute="height" multiplier="1:1" id="vm8-sa-PO6"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w7K-wM-UFQ">
+                    <rect key="frame" x="67" y="8" width="240" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="w7K-wM-UFQ" secondAttribute="height" multiplier="40:11" constant="-3.636363636363626" id="Ty4-dw-EBf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PzD-FO-cz0" secondAttribute="trailing" constant="15" id="4qA-kK-uMo"/>
+                <constraint firstItem="Uql-23-oqG" firstAttribute="top" secondItem="PzD-FO-cz0" secondAttribute="bottom" constant="7" id="AfX-Hu-HZK"/>
+                <constraint firstItem="PzD-FO-cz0" firstAttribute="top" secondItem="w7K-wM-UFQ" secondAttribute="bottom" constant="2" id="Ain-uT-5ls"/>
+                <constraint firstAttribute="trailing" secondItem="w7K-wM-UFQ" secondAttribute="trailing" constant="68" id="BMA-eh-ivL"/>
+                <constraint firstAttribute="trailing" secondItem="Uql-23-oqG" secondAttribute="trailing" constant="93" id="Bnr-ec-cLf"/>
+                <constraint firstItem="w7K-wM-UFQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="ILC-CN-eCu"/>
+                <constraint firstItem="w7K-wM-UFQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="67" id="aVh-7d-KQh"/>
+                <constraint firstItem="PzD-FO-cz0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="fHH-l9-Tbm"/>
+                <constraint firstItem="Uql-23-oqG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="92" id="hNO-df-IxR"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="426.5" y="323.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,39 @@
+/***************************************************/
+/*                   我的互生                       */
+/***************************************************/
+
+"GYHS_Main_Quick" = "快捷";
+"GYHS_Main_SavingsCard" = "储蓄卡";
+"GYHS_Main_CreditCard" = "信用卡";
+"GYHS_Main_My_Account" = "我的账户";
+"GYHS_Main_The_Device_Not_Support_The_Camera" = "设备不支持拍照功能;或权限被禁止,请在系统设置,个人隐私检测权限！";
+"GYHS_Main_Please_Again_After_Logging_Using_Alternate_Number" = "请使用互生号登录后再试";
+"GYHS_Main_Points_Account" = "积分账户";
+"GYHS_Main_HSB_Accounts" = "互生币账户";
+"GYHS_Main_Cash_Account" = "货币账户";
+"GYHS_Main_Investment_Account" = "投资账户";
+"GYHS_Main_Ar_Send_Ticket" = "消费抵扣券账户";
+"GYHS_Main_Operation" = "业务办理";
+"GYHS_Main_My_Profile" = "我的资料";
+"GYHS_Main_QRScran" = "扫一扫";
+"GYHS_Main_GoodMorning" = "上午好";
+"GYHS_Main_GoodAfternoon" = "下午好";
+"GYHS_Main_Lastlogin_Time" = "上次登录时间";
+"GYHS_Main_PhoneNo" = "手机号";
+"GYHS_Main_Your_Information_Not_Complete_Affect_Some_Business_Use" = "您的相关资料尚未填写完整,未免影响部分业务使用,";
+"GYHS_Main_Improve_Immediately" = "立即完善";
+"GYHS_Main_Warm_Prompt" = "温馨提示";
+"GYHS_Main_POS_This_Deal_Paid" = "此交易已经支付";
+"GYHS_Main_HS_Pos_Deal_Failure" = "扫描异常";
+"GYHS_Main_Local_Set_tlement_Currency" = "本地结算币种:";
+"GYHS_Main_Currency_ConversionRatio" = "货币转换比率:";
+"GYHS_Main_Convert_Currency_Amount" = "折算货币金额:";
+"GYHS_Main_TheYuan" = "人民币";
+"GYHS_Main_Currency_Account_Pay" = "货币账户支付";
+"GYHS_Main_HS_Balances" = "余额:";
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="43" id="KGk-i7-Jjw" customClass="GYHEHeadViewThirdCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="42"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gyhe_shopdetail_add_address" translatesAutoresizingMaskIntoConstraints="NO" id="tlk-I8-OR9">
+                        <rect key="frame" x="15" y="13" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="aID-Xt-ukB"/>
+                            <constraint firstAttribute="height" constant="16" id="gbp-ja-KiI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加上门服务地址" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbE-6m-CEs">
+                        <rect key="frame" x="36" y="11" width="108" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Uhi-CX-xlt"/>
+                            <constraint firstAttribute="width" constant="108" id="z7V-Zi-8Sd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gy_he_ahead_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Wx3-MS-GdI">
+                        <rect key="frame" x="296" y="14" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="dCJ-OG-EoA"/>
+                            <constraint firstAttribute="height" constant="15" id="fb4-lt-aix"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6L0-Ku-Zpv">
+                        <rect key="frame" x="15" y="41" width="306" height="1"/>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="GYL-XZ-Qfy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6L0-Ku-Zpv" secondAttribute="bottom" id="7nS-d9-TOp"/>
+                    <constraint firstItem="XbE-6m-CEs" firstAttribute="leading" secondItem="tlk-I8-OR9" secondAttribute="trailing" constant="5" id="Epp-f2-QCl"/>
+                    <constraint firstItem="Wx3-MS-GdI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QtI-6e-5d1"/>
+                    <constraint firstItem="tlk-I8-OR9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="SmI-86-NRv"/>
+                    <constraint firstItem="XbE-6m-CEs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YRW-vQ-HLb"/>
+                    <constraint firstAttribute="trailing" secondItem="6L0-Ku-Zpv" secondAttribute="trailing" id="ZqE-5W-GSZ"/>
+                    <constraint firstItem="tlk-I8-OR9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dS9-ps-Od5"/>
+                    <constraint firstItem="6L0-Ku-Zpv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="e3r-ws-35u"/>
+                    <constraint firstAttribute="trailing" secondItem="Wx3-MS-GdI" secondAttribute="trailing" constant="10" id="jyM-dn-3N7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lineView" destination="6L0-Ku-Zpv" id="MK3-Nm-KQD"/>
+                <outlet property="titleLabelFirst" destination="XbE-6m-CEs" id="T7l-y4-WHD"/>
+            </connections>
+            <point key="canvasLocation" x="187.5" y="276.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gy_he_ahead_icon" width="16" height="16"/>
+        <image name="gyhe_shopdetail_add_address" width="16" height="16"/>
+    </resources>
+</document>

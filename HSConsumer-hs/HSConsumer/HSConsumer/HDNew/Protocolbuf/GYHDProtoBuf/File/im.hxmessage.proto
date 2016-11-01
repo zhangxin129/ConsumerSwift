@@ -1,0 +1,163 @@
+package im;
+
+import "im.hxcommon.proto";
+
+//enable class reference
+//option optimize_for = LITE_RUNTIME; 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//即时消息
+//请求发送消息
+message ChatMsg
+{
+	required  string  msgid       = 1;  // 客户端默认填空，由服务端生成
+	optional  string  guid        = 2;  // 客户端填写，服务端回传
+	required 	string 	fromid		  = 3;  // 发收者id.当是IM消息时，id格式为:(w/m/p)_(nc/c/e)_custID；当是互生系统平台消息时，id格式为:(nc/c/e)_custID
+	required 	string 	toid		    = 4;  // 接收者id,格式:(w/m/p)_(nc/c/e)_custID
+	required 	string 	sessiontype	= 5;  // 会话类型："pf"=系统平台,"p2p"="点对点聊天消息", "friend"=好友操作消息"
+	// 当sessiontype=p2p，msgtype = {"c2c"=消费者与消息者, "c2e"=消息者与企业, "e2e"=操作员与操作员, "nc2e"=非持卡人发送到操作员 ...}
+	// 当sessiontype=friend, msgtype = {"add"="添加好友,"agree"=“同意添加好友,"refuse"="拒绝好友", "del"="删除好友"...} 
+	// 当sessiontype=pf, msgtype = {"01001"=私信, "01002"=地区平台发给所有下级企业/消费者的公开信...}
+	required  string  msgtype     = 6;  
+	required 	uint64 	sendtime    = 7;  // 消息发送时间，客户端填0,精度为毫秒
+	required 	string 	content     = 8;  // json格式的消息内容,utf8编码
+	required  string  contenttype = 9;  // "00":文本和表情，"10"：图片，"13"：音频，"14"：视频
+	required  bool    isreaded    = 10; // 消息是否被已读  
+	optional  int32   color       = 11; // 消息染色,方便跟踪调试
+}
+
+//响应发送消息
+message ChatMsgRsp
+{
+	//userid: it's wired, bacause the framework is not able to forward or delivery message via session between client and server,
+	//warnning: maybe it'll be discarded in the future
+  required string userid = 1;         // 消息回复的对象
+  optional string   guid = 2;         // 服务端回传
+	required ResultCode code = 3;
+}
+
+//消息已收到
+message ChatMsgAckReq
+{
+  required string userid = 1;        
+	required string msgid = 2;
+}
+
+//服务器响应消息已收到
+message ChatMsgAckRsp
+{
+  required string userid = 1;          // 消息回复的对象
+	required ResultCode code = 2;
+}
+
+//回写已读消息状态
+message ChatMsgReadReq
+{
+  required string userid = 1;       
+	required string msgid = 2;
+}
+
+//服务器响应消息已读
+message ChatMsgReadRsp
+{
+  required string userid = 1;        // 消息回复的对象
+	required ResultCode code = 2;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//离线消息
+//服务器返回给客户端的离线消息汇总条目
+message OfflineMsgSum
+{
+	required string category = 1;       // "pf"=互生系统平台,"p2p"="点对点聊天消息", "friend"=好友操作消息", "kefu"="客服消息"
+  //当category="p2p", fromid = (nc/c/e)_custID;
+	//当category="pf", fromid =  {"01001"=私信, "01002"=地区平台发给所有下级企业/消费者的公开信...};
+	//当category="friend", fromid =	(nc/c/e)_custID 
+	//当category="kefu", fromid = (nc/c/e)_custID 
+	required 	string 	fromid = 2;       
+	required 	string 	toid	 = 3;       // 接收者id,格式:(w/m/p)_(nc/c/e)_custID     
+	required int32  unreadedcnt = 4;    // 未读总条数 
+	required string lastcontent = 5;    // 最近一条json格式的消息内容
+	required uint64 lastupdate = 6;     // 最近一条未读消息的时间戳
+}
+
+//客户端请求所有离线消息汇总
+message OfflineMsgSumReq
+{
+	required string userid = 1;        // 消息回复的对象,格式:(w/m/p)_(nc/c/e)_custID
+}
+
+//响应所有离线消息汇总
+message OfflineMsgSumRsp
+{
+	required string userid = 1;        // 消息回复的对象
+	required ResultCode code = 2;
+	repeated OfflineMsgSum summary = 3; 
+}
+
+	
+//请求拉取点对点和好友操作的离线消息
+message OfflineMsgReq
+{    
+	required string category = 1;       // "p2p"=点对点聊天消息, "friend"=好友操作消息
+	required string 	fromid = 2;       // 发送者id,格式:(nc/c/e)_custID 
+	required string 	toid	 = 3;       // 接收者id,格式:(w/m/p)_(nc/c/e)_custID          
+	required int32  count = 4;          // 一次拉取多少条
+	required uint64 lastupdate = 5;     // 最近一条未读消息的时间戳
+}
+		
+//响应点对点和好友操作的离线消息
+message OfflineMsgRsp
+{
+  required string userid = 1;        // 消息回复的对象
+	required ResultCode code = 2; 
+	repeated ChatMsg msglist = 3;
+}
+
+//根据消息类型列表拉取平台离线消息
+message PfOfflineMsgReq
+{    
+	repeated string msgtypelist = 1;    // {"01001"=私信, "01002"=地区平台发给所有下级企业/消费者的公开信...}
+	required string 	userid	  = 2;    // 接收者id,格式:(w/m/p)_(nc/c/e)_custID      
+	required int32  count = 3;          // 一次拉取多少条
+	required uint64 lastupdate = 4;     // 最近一条未读消息的时间戳
+}
+	
+//响应平台离线消息
+message PfOfflineMsgRsp
+{
+  required string userid = 1;        // 消息回复的对象 
+	repeated ChatMsg msglist = 2;
+	required ResultCode code = 3;
+}
+		
+//客户端批量消息ACK
+message BatchMsgAckReq
+{
+	required string userid = 1;        // 消息接收者的ID
+	repeated string msgidlist = 2;     // 批量已读的消息ID列表
+}	
+	
+//服务端响应批量消息ACK
+message BatchMsgAckRsp
+{
+	required string userid = 1;        // 消息回复的对象
+	required ResultCode code = 2;
+}
+	
+//批量回写已读消息状态
+message BatchMsgReadReq
+{ 
+	required string userid = 1;        // 消息接收者的ID      
+	repeated string msgidlist = 2;     // 批量已读的消息ID列表
+}	
+	
+//响应批量已读
+message BatchMsgReadRsp
+{
+	required string userid = 1;        // 消息回复的对象
+	required ResultCode code = 2;
+}	
+
+

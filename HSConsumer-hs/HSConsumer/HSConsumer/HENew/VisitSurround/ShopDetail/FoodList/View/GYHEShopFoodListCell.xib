@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="GYHEShopFoodListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gyhe_food_example_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ecj-6N-pHo">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4H6-V7-tx1"/>
+                            <constraint firstAttribute="height" constant="60" id="saV-in-BaZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="川湘菜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zo3-PV-Ifm">
+                        <rect key="frame" x="75" y="10" width="230" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PS-wr-NhI">
+                        <rect key="frame" x="93" y="31" width="42" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQS-7f-Ksn">
+                        <rect key="frame" x="93" y="52" width="23" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.1137254902" green="0.49019607840000001" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gyhe_shop_good_coin" translatesAutoresizingMaskIntoConstraints="NO" id="k2D-Al-gqc">
+                        <rect key="frame" x="75" y="33" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="3RZ-j4-sm7"/>
+                            <constraint firstAttribute="height" constant="16" id="siE-Lm-WJO"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gyhe_shop_good_pv" translatesAutoresizingMaskIntoConstraints="NO" id="zsD-K5-oHE">
+                        <rect key="frame" x="75" y="54" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="eVa-LU-qNT"/>
+                            <constraint firstAttribute="width" constant="16" id="eq0-iz-iXD"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJR-FW-k8N">
+                        <rect key="frame" x="270" y="37" width="50" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="47" id="9pS-jv-3rj"/>
+                            <constraint firstAttribute="width" constant="50" id="a94-iZ-MBU"/>
+                        </constraints>
+                        <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" image="gyhe_shop_server_add"/>
+                        <connections>
+                            <action selector="add:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="maf-8m-OXf"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ae-RI-xus">
+                        <rect key="frame" x="258" y="46" width="24" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Afp-MV-WUx"/>
+                            <constraint firstAttribute="width" constant="24" id="dal-t3-qRX"/>
+                        </constraints>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdG-ff-lee">
+                        <rect key="frame" x="208" y="37" width="62" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="GUN-of-aIP"/>
+                            <constraint firstAttribute="height" constant="47" id="i4W-um-sdE"/>
+                        </constraints>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                        <state key="normal" image="gyhe_shop_server_less"/>
+                        <connections>
+                            <action selector="lass:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NfH-8E-sEQ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zsD-K5-oHE" firstAttribute="top" secondItem="k2D-Al-gqc" secondAttribute="bottom" constant="5" id="0XQ-Qe-gUv"/>
+                    <constraint firstItem="zsD-K5-oHE" firstAttribute="leading" secondItem="ecj-6N-pHo" secondAttribute="trailing" constant="5" id="7Ua-c5-fKp"/>
+                    <constraint firstItem="0Ae-RI-xus" firstAttribute="centerY" secondItem="fJR-FW-k8N" secondAttribute="centerY" id="Buj-dk-AEY"/>
+                    <constraint firstItem="0Ae-RI-xus" firstAttribute="leading" secondItem="NdG-ff-lee" secondAttribute="trailing" id="Cgf-vc-ehk"/>
+                    <constraint firstItem="k2D-Al-gqc" firstAttribute="leading" secondItem="ecj-6N-pHo" secondAttribute="trailing" constant="5" id="DZ8-tO-67J"/>
+                    <constraint firstItem="Zo3-PV-Ifm" firstAttribute="leading" secondItem="ecj-6N-pHo" secondAttribute="trailing" constant="5" id="Dla-Gd-FgI"/>
+                    <constraint firstAttribute="bottom" secondItem="fJR-FW-k8N" secondAttribute="bottom" constant="-5" id="DwL-pn-rcO"/>
+                    <constraint firstItem="fJR-FW-k8N" firstAttribute="leading" secondItem="NdG-ff-lee" secondAttribute="trailing" id="GrV-Gv-vZ4"/>
+                    <constraint firstAttribute="trailing" secondItem="Zo3-PV-Ifm" secondAttribute="trailing" constant="15" id="Rdy-5K-x5i"/>
+                    <constraint firstItem="QQS-7f-Ksn" firstAttribute="leading" secondItem="zsD-K5-oHE" secondAttribute="trailing" constant="2" id="W55-rS-Osv"/>
+                    <constraint firstItem="7PS-wr-NhI" firstAttribute="centerY" secondItem="k2D-Al-gqc" secondAttribute="centerY" id="Zd1-dW-CQb"/>
+                    <constraint firstItem="ecj-6N-pHo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Zvz-dn-TgU"/>
+                    <constraint firstAttribute="trailing" secondItem="0Ae-RI-xus" secondAttribute="trailing" constant="38" id="bEC-jo-ZWo"/>
+                    <constraint firstItem="k2D-Al-gqc" firstAttribute="top" secondItem="Zo3-PV-Ifm" secondAttribute="bottom" constant="5" id="djx-BI-Sgp"/>
+                    <constraint firstItem="fJR-FW-k8N" firstAttribute="leading" secondItem="0Ae-RI-xus" secondAttribute="trailing" id="gGJ-4S-8Ka"/>
+                    <constraint firstItem="Zo3-PV-Ifm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hye-Tt-h4W"/>
+                    <constraint firstItem="7PS-wr-NhI" firstAttribute="leading" secondItem="k2D-Al-gqc" secondAttribute="trailing" constant="2" id="nWO-qC-Idf"/>
+                    <constraint firstItem="NdG-ff-lee" firstAttribute="centerY" secondItem="fJR-FW-k8N" secondAttribute="centerY" id="qoe-fd-qey"/>
+                    <constraint firstItem="ecj-6N-pHo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="qra-S9-H18"/>
+                    <constraint firstItem="QQS-7f-Ksn" firstAttribute="centerY" secondItem="zsD-K5-oHE" secondAttribute="centerY" id="swL-Cf-n0N"/>
+                    <constraint firstAttribute="trailing" secondItem="fJR-FW-k8N" secondAttribute="trailing" id="ttn-s1-l2C"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Cgf-vc-ehk"/>
+                        <exclude reference="gGJ-4S-8Ka"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="lessBtn" destination="NdG-ff-lee" id="0pi-Rg-tCH"/>
+                <outlet property="textField" destination="0Ae-RI-xus" id="IVI-IB-6fj"/>
+            </connections>
+            <point key="canvasLocation" x="275" y="174.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gyhe_food_example_icon" width="122" height="121"/>
+        <image name="gyhe_shop_good_coin" width="16" height="16"/>
+        <image name="gyhe_shop_good_pv" width="16" height="16"/>
+        <image name="gyhe_shop_server_add" width="23" height="23"/>
+        <image name="gyhe_shop_server_less" width="23" height="23"/>
+    </resources>
+</document>

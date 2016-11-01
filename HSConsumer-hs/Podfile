@@ -1,0 +1,23 @@
+platform :ios,'7.0'
+inhibit_all_warnings!
+
+target 'HSConsumer' do
+pod 'ProtocolBuffers'
+pod 'FMDB'
+pod 'MJExtension'
+pod 'UITableView+FDTemplateLayoutCell'
+pod 'BaiduMapKit'
+pod 'Masonry'
+pod 'IQKeyboardManager'
+pod 'XMPPFramework'
+pod 'pop'
+pod 'GYKit' , :git => 'http://git.gyist.com/ios/GYKit.git', :tag => '1.1.7'
+pod 'JSPatch'
+pod 'UMengAnalytics-NO-IDFA'
+pod 'UMengSocialCOM'
+pod 'iRate'
+pod 'iVersion'
+pod 'JPFPSStatus'
+
+end
+

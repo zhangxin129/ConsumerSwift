@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GYShopFoodDetailViewController">
+            <connections>
+                <outlet property="imgView" destination="zzm-13-3K0" id="rQj-vZ-BuT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gyhe_foodDetail_example1" translatesAutoresizingMaskIntoConstraints="NO" id="zzm-13-3K0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kck-Qe-Oe6">
+                    <rect key="frame" x="236" y="416" width="84" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="5xa-u8-vnl"/>
+                        <constraint firstAttribute="height" constant="64" id="MnZ-D4-wNm"/>
+                    </constraints>
+                    <connections>
+                        <action selector="change:" destination="-1" eventType="touchUpInside" id="DBx-5Q-cBX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zzm-13-3K0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cd6-Js-mN8"/>
+                <constraint firstAttribute="bottom" secondItem="Kck-Qe-Oe6" secondAttribute="bottom" id="WzD-K0-68q"/>
+                <constraint firstItem="zzm-13-3K0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b49-bK-Jrt"/>
+                <constraint firstAttribute="trailing" secondItem="zzm-13-3K0" secondAttribute="trailing" id="h59-4m-mJp"/>
+                <constraint firstAttribute="trailing" secondItem="Kck-Qe-Oe6" secondAttribute="trailing" id="r09-lh-B1K"/>
+                <constraint firstAttribute="bottom" secondItem="zzm-13-3K0" secondAttribute="bottom" id="yfZ-xC-6ZS"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gyhe_foodDetail_example1" width="425" height="290"/>
+    </resources>
+</document>

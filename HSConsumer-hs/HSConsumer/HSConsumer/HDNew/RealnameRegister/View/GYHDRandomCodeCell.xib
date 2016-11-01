@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GYHDRandomCodeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSu-4I-fmc">
+                        <rect key="frame" x="12" y="4" width="60" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="RtP-2l-ymE"/>
+                            <constraint firstAttribute="width" constant="60" id="amk-KN-HlX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wq-On-4em">
+                        <rect key="frame" x="72" y="4" width="94" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="w64-MV-HBe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01r-yD-xeV">
+                        <rect key="frame" x="254" y="4" width="55" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="4Tw-cU-Vvg"/>
+                            <constraint firstAttribute="width" constant="55" id="Llw-MO-9r8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="换一张">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="GYHDNextRandomCodeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yj5-Qh-zgM"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6J-kt-fWD" userLabel="验证码图框" customClass="GYRandomCodeView">
+                        <rect key="frame" x="166" y="4" width="80" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="LnX-Me-Joa"/>
+                            <constraint firstAttribute="height" constant="40" id="jdP-0C-GZH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2wq-On-4em" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="59t-5U-Tho"/>
+                    <constraint firstItem="f6J-kt-fWD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="7Od-w9-f3B"/>
+                    <constraint firstItem="01r-yD-xeV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="JJA-X1-vtj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="01r-yD-xeV" secondAttribute="trailing" constant="3" id="M1X-R7-kPW"/>
+                    <constraint firstItem="2wq-On-4em" firstAttribute="leading" secondItem="eSu-4I-fmc" secondAttribute="trailing" id="OOW-P1-Xlb"/>
+                    <constraint firstItem="f6J-kt-fWD" firstAttribute="leading" secondItem="2wq-On-4em" secondAttribute="trailing" id="aae-Mo-IPr"/>
+                    <constraint firstItem="eSu-4I-fmc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="bRS-5O-kQi"/>
+                    <constraint firstItem="01r-yD-xeV" firstAttribute="leading" secondItem="f6J-kt-fWD" secondAttribute="trailing" constant="8" id="jGB-BT-2zC"/>
+                    <constraint firstItem="eSu-4I-fmc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="sR6-Mh-VqP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nextRandomCodeBtn" destination="01r-yD-xeV" id="yIu-Qt-jr3"/>
+                <outlet property="randomCodeTextField" destination="2wq-On-4em" id="S54-Sp-sbS"/>
+                <outlet property="randomCodeView" destination="f6J-kt-fWD" id="hI3-p6-P6P"/>
+                <outlet property="verificationCodeLabel" destination="eSu-4I-fmc" id="gG2-C3-U09"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="47" id="KGk-i7-Jjw" customClass="GYFullPopOneCell">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRa-Be-z4a">
+                        <rect key="frame" x="0.0" y="8" width="90" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="GPZ-Tv-Wlf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAM-fc-cS5">
+                        <rect key="frame" x="18" y="40" width="54" height="4"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="XNb-rV-SeX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="fAM-fc-cS5" secondAttribute="trailing" constant="10" id="5KJ-KN-QLZ"/>
+                    <constraint firstItem="eRa-Be-z4a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="5qs-8D-RTp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eRa-Be-z4a" secondAttribute="trailing" constant="-8" id="I6g-RD-7t2"/>
+                    <constraint firstItem="fAM-fc-cS5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="K39-GR-TaP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fAM-fc-cS5" secondAttribute="bottom" constant="-9" id="Lnj-un-Zbc"/>
+                    <constraint firstItem="eRa-Be-z4a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="lwz-p7-m7h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lineView" destination="fAM-fc-cS5" id="jqp-Yw-0P6"/>
+                <outlet property="provinceNameLb" destination="eRa-Be-z4a" id="yR2-do-SaU"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="300"/>
+        </tableViewCell>
+    </objects>
+</document>

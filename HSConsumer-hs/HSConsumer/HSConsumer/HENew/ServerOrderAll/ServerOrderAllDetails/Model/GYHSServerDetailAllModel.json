@@ -1,0 +1,39 @@
+{
+  "currentPageIndex" : 0,
+  "data" : {
+    "payTime" : "12:15",
+    "confirmTime" : "12:45",
+    "items" : [
+      {
+        "count" : "1",
+        "price" : 3.99,
+        "pv" : "10",
+        "title" : "养生蒸菜"
+      },
+      {
+        "count" : "1",
+        "price" : 3.99,
+        "pv" : "10",
+        "title" : "养生蒸菜"
+      }
+    ],
+    "receiveTime" : "12:00",
+    "arriveTime" : "12:05",
+    "receiver" : "加多宝",
+    "receiverAddress" : "深圳来了就是深圳，傻白就是打败此大白菜大白菜",
+    "receiverContact" : "15654565454",
+    "sendTime" : "尽快送到",
+    "totalPrice" : "2000",
+    "totalPV" : "100",
+    "cutMoney" : "100",
+    "reallyPay" : "1800",
+    "totalCut":"2",
+    "shopName" : "今天明天后天【创业者】",
+      "postPay" :"12",
+    "status" : "1"
+  },
+  "msg" : null,
+  "retCode" : 200,
+  "rows" : null,
+  "totalPage" : 0
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="KGk-i7-Jjw" customClass="GYExpressListCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2x-xC-FtO">
+                        <rect key="frame" x="10" y="11" width="184" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="184" id="amm-5l-iUd"/>
+                            <constraint firstAttribute="height" constant="21" id="tXg-Tt-lvF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gyhe_check_mark_red" translatesAutoresizingMaskIntoConstraints="NO" id="N5N-Sc-y4Q">
+                        <rect key="frame" x="269" y="11" width="26" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="73z-MA-IbA"/>
+                            <constraint firstAttribute="width" constant="26" id="tN1-lq-wmj"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="e2x-xC-FtO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="GcW-P7-meU"/>
+                    <constraint firstItem="N5N-Sc-y4Q" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-18" id="NqI-3Z-zIQ"/>
+                    <constraint firstItem="e2x-xC-FtO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="QVf-MX-zeB"/>
+                    <constraint firstItem="N5N-Sc-y4Q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="lEC-am-KxS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="expressLabel" destination="e2x-xC-FtO" id="vEg-XB-5Pu"/>
+                <outlet property="isSelectImageView" destination="N5N-Sc-y4Q" id="Vhd-8W-KMz"/>
+            </connections>
+            <point key="canvasLocation" x="270.5" y="202.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gyhe_check_mark_red" width="44" height="28"/>
+    </resources>
+</document>

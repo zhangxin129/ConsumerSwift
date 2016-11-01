@@ -1,0 +1,25 @@
+/***************************************************/
+/*                   QR模块                         */
+/***************************************************/
+"GYHS_QR_cardInfo" = "互生卡信息";
+"GYHS_QR_cardNumber" = "互生卡号";
+"GYHS_QR_entHSNumber" = "企业互生号";
+"GYHS_QR_anEnterpriseName" = "企业名称";
+"GYHS_QR_posDealTime" = "交易时间";
+"GYHS_QR_posDealTransAmount" = "消费金额";
+"GYHS_QR_proportionalIntegral"="积分比例";
+"GYHS_QR_posDealPointTransAmount" = "积分金额";
+"GYHS_QR_posShouldPayHsbAmount" = "应付互生币";
+"GYHS_QR_trade_pwd" = "交易密码";
+"GYHS_QR_posDiscountCoupon" = "抵扣券";
+"GYHS_QR_posRealMoney" = "实付金额";
+"GYHS_QR_posDistributePVNumber" = "分配积分数";
+"GYHS_QR_posDealDetail" = "交易详情";
+"GYHS_QR_posWarning" = "温馨提示，您的互生币账户余额为";
+"GYHS_QR_immediatePayment"="立即付款";
+"GYHS_QR_input_trading_pwd" = "输入8位交易密码";
+"GYHS_QR_thisDealIsPaid" = "此交易已经支付";
+"GYHS_QR_chooseOtherPaymentWay" = "选择其他支付方式";
+"GYHS_QR_order_payConfirm" = "支付确认";
+"GYHS_QR_chooseOtherBank/Payment" = "选择其它银行/支付方式";
+

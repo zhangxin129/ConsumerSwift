@@ -1,0 +1,37 @@
+/***************************************************/
+/*                   非持卡人模块                    */
+/***************************************************/
+"GYHS_NoHSCard_baseInfo" = "基本资料";
+"GYHS_NoHSCard_avatar" = "头像";
+"GYHS_NoHSCard_user_Name" = "姓名";
+"GYHS_NoHSCard_nickname" = "昵称";
+"GYHS_NoHSCard_age" = "年龄";
+"GYHS_NoHSCard_sex" = "性别";
+"GYHS_NoHSCard_graduation_from" = "毕业院校";
+"GYHS_NoHSCard_professional" = "职业";
+"GYHS_NoHSCard_hobby" = "爱好";
+"GYHS_NoHSCard_blood" = "血型";
+"GYHS_NoHSCard_weixin_number" = "微信号";
+"GYHS_NoHSCard_resident_address" = "常住地址";
+"GYHS_NoHSCard_request_data_failure" = "请求数据失败";
+"GYHS_NoHSCard_cancel" = "取消";
+"GYHS_NoHSCard_take_photos" = "拍照";
+"GYHS_NoHSCard_ablum" = "相册";
+"GYHS_NoHSCard_netError"="网络请求失败";
+"GYHS_NoHSCard_already_setting" = "已设置";
+"GYHS_NoHSCard_phone_number_binding" = "手机绑定";
+"GYHS_NoHSCard_email_binding" = "邮箱绑定";
+"GYHS_NoHSCard_bank_card_binding" = "银行卡绑定";
+"GYHS_NoHSCard_my_profile" = "我的资料";
+"GYHS_NoHSCard_unfinished" = "未完成";
+"GYHS_NoHSCard_finished" = "已完成";
+"GYHS_NoHSCard_non_setting" = "未设置";
+"GYHS_NoHSCard_quick_card_pay" = "我的快捷支付卡";
+"GYHS_NoHSCard_qq_num" = "QQ号";
+"GYHS_NoHSCard_local_area" = "所在地区";
+"GYHS_NoHSCard_postcodes" = "邮编";
+"GYHS_NoHSCard_please_input_name" = "请输入姓名";
+"GYHS_NoHSCard_age_must_1to120_old" = "年龄只能在1~120岁之间！";
+"GYHS_NoHSCard_qqNum_cannot_more_than_20" = "QQ号码不能超过20个字符！";
+"GYHS_NoHSCard_weixinNum_cannot_more_than_20" = "微信号码不能超过20个字符！";
+"GYHS_NoHSCard_Address_Save" = "保存";

@@ -1,0 +1,42 @@
+package im;
+
+import "im.hxcommon.proto";
+
+option optimize_for = LITE_RUNTIME;
+
+message LoginReq{
+	//0x2001
+	required string sCustID = 1;						// (nc/c/e)_custid
+	required string sLoginToken = 2;				
+	required uint32 nChannelType = 3;				// 用户中心通道类型
+	optional string sEntResNo = 4;					// 11位资源号
+	required bool	bForceLogin = 5;					// 强制登录标志。 0: 正常登录模式； 1： 强制登录模式。
+	required uint32 nDeviceType = 6;				// 以业务文档定义类型为准。
+	optional string sDeviceVersion = 7;			// 用于IOS设备，标识版本。 
+	optional string sDeviceToken = 8;				// 用于IOS设备。
+}
+message LoginAck{
+	//0x2002
+	required string scustID = 1;
+	required ResultCode  nRet = 2;					//异常错误码 ERROR_LOGIN_AUTH = 101； ERROR_RELOGIN = 102
+}
+
+message LogoutReq{
+	//0x2003
+	required string sCustID = 1;
+	required uint32 nDeviceType = 2;
+}
+
+message LogoutAck{
+	//0x2004
+	required ResultCode nRet = 1;					//异常错误码 ERROR_LOGOUT = 103
+}
+
+message KickoutNotify{
+	//0x2006
+	required string sCustID 		= 1;				//（w/m/p)_(nc/c/e)_custid
+	required uint32 nDeviceType = 2;
+	required string ip 			    = 3;
+	required uint32 port			  = 4;
+}
+

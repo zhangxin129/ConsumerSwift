@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GYHSModifyReserveDataViewController">
+            <connections>
+                <outlet property="confirmBtn" destination="ofm-dF-ec9" id="DfV-gy-osm"/>
+                <outlet property="textField" destination="IbX-1h-ElO" id="yLP-sK-cYN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFJ-EA-uIF">
+                    <rect key="frame" x="0.0" y="16" width="320" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="我的互生" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IbX-1h-ElO">
+                            <rect key="frame" x="130" y="7" width="175" height="30"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="修改预留信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jo4-K8-rmV">
+                            <rect key="frame" x="16" y="11" width="105" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="9J2-ae-fga"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofm-dF-ec9">
+                    <rect key="frame" x="20" y="80" width="280" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="45G-cb-iPo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="确定" backgroundImage="hs_btn_confirm_bg.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmBtnClicked:" destination="-1" eventType="touchUpInside" id="3tV-2u-DvH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ofm-dF-ec9" firstAttribute="top" secondItem="yFJ-EA-uIF" secondAttribute="bottom" constant="20" id="7uS-93-p7g"/>
+                <constraint firstItem="yFJ-EA-uIF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BHm-m6-U1T"/>
+                <constraint firstAttribute="trailing" secondItem="ofm-dF-ec9" secondAttribute="trailing" constant="20" id="Cjw-zT-6MV"/>
+                <constraint firstItem="yFJ-EA-uIF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="KII-PN-xeA"/>
+                <constraint firstAttribute="trailing" secondItem="yFJ-EA-uIF" secondAttribute="trailing" id="l5P-yG-Qij"/>
+                <constraint firstItem="ofm-dF-ec9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="q6U-uV-hrk"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="330" y="271"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hs_btn_confirm_bg.png" width="580" height="75"/>
+    </resources>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WealCheckDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="19"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve7-Vx-QAI">
+                        <rect key="frame" x="0.0" y="1" width="100" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="cuX-7S-0oq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iir-EA-X8h">
+                        <rect key="frame" x="105" y="1" width="200" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bc-TL-Cpa">
+                        <rect key="frame" x="105" y="1" width="200" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="X2N-6w-gjz"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ve7-Vx-QAI" firstAttribute="bottom" secondItem="Iir-EA-X8h" secondAttribute="bottom" id="4vQ-BW-2Fy"/>
+                    <constraint firstItem="Ve7-Vx-QAI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FgA-0v-5le"/>
+                    <constraint firstItem="Iir-EA-X8h" firstAttribute="bottom" secondItem="6Bc-TL-Cpa" secondAttribute="bottom" id="K6X-gS-MdV"/>
+                    <constraint firstItem="Ve7-Vx-QAI" firstAttribute="top" secondItem="Iir-EA-X8h" secondAttribute="top" id="Kzg-aH-bgC"/>
+                    <constraint firstItem="Iir-EA-X8h" firstAttribute="trailing" secondItem="6Bc-TL-Cpa" secondAttribute="trailing" id="Txb-V7-4YT"/>
+                    <constraint firstItem="Iir-EA-X8h" firstAttribute="leading" secondItem="Ve7-Vx-QAI" secondAttribute="trailing" constant="5" id="aLA-yZ-qU3"/>
+                    <constraint firstItem="Iir-EA-X8h" firstAttribute="leading" secondItem="6Bc-TL-Cpa" secondAttribute="leading" id="d12-eV-s3T"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Iir-EA-X8h" secondAttribute="trailing" constant="7" id="f2f-Oo-0pT"/>
+                    <constraint firstItem="Iir-EA-X8h" firstAttribute="top" secondItem="6Bc-TL-Cpa" secondAttribute="top" id="g2T-2F-xzh"/>
+                    <constraint firstItem="Ve7-Vx-QAI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="iBS-tr-Ava"/>
+                    <constraint firstAttribute="bottom" secondItem="Ve7-Vx-QAI" secondAttribute="bottom" constant="1" id="u1n-Qn-u4O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn" destination="6Bc-TL-Cpa" id="KFf-w3-PPk"/>
+                <outlet property="lbContent" destination="Iir-EA-X8h" id="VKf-ak-NCM"/>
+                <outlet property="lbTitle" destination="Ve7-Vx-QAI" id="qjv-5a-7Oi"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="127"/>
+        </tableViewCell>
+    </objects>
+</document>
