@@ -1,0 +1,31 @@
+platform:ios, ‘8.0’
+inhibit_all_warnings!
+use_frameworks!
+def pods
+pod 'FMDB'
+pod 'YTKKeyValueStore'
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'pop'
+pod 'BlocksKit'
+pod 'ProtocolBuffers'
+pod 'IQKeyboardManager'
+pod 'JSPatch'
+pod 'GYKit' , :git => 'http://git.gyist.com/ios/GYKit.git', :branch => 'GYKit_1.0'
+pod 'iRate'
+pod 'UMengAnalytics-NO-IDFA'
+pod 'UITableView+FDTemplateLayoutCell'
+pod 'iVersion'
+pod 'BaiduMapKit'
+pod 'Shimmer'
+pod 'Charts'
+pod 'CocoaAsyncSocket'
+end
+target 'HSCompanyPad' do
+    pods
+end
+
+
+
+
+

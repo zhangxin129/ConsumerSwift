@@ -1,0 +1,156 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
+  - BaiduMapKit (3.0.0)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Charts (2.2.5):
+    - Charts/Core (= 2.2.5)
+  - Charts/Core (2.2.5)
+  - CocoaAsyncSocket (7.5.0):
+    - CocoaAsyncSocket/GCD (= 7.5.0)
+  - CocoaAsyncSocket/GCD (7.5.0)
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - DZNEmptyDataSet (1.8.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - GYKit (1.1.7):
+    - GYKit/Category (= 1.1.7)
+    - GYKit/Foundation (= 1.1.7)
+    - GYKit/Network (= 1.1.7)
+    - GYKit/UIKit (= 1.1.7)
+  - GYKit/Category (1.1.7):
+    - DZNEmptyDataSet
+    - GYKit/Network
+    - JSONModel
+  - GYKit/Foundation (1.1.7):
+    - Aspects
+    - CocoaLumberjack (= 1.9.2)
+    - GYKit/Category
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - PinYin4Objc
+    - YYKit
+  - GYKit/Network (1.1.7):
+    - AFNetworking
+  - GYKit/UIKit (1.1.7):
+    - GYKit/Category
+    - GYKit/Foundation
+    - pop
+    - YYKit
+  - IQKeyboardManager (4.0.4)
+  - iRate (1.11.4)
+  - iVersion (1.11.4)
+  - JSONModel (1.3.0)
+  - JSPatch (1.0):
+    - JSPatch/Core (= 1.0)
+  - JSPatch/Core (1.0)
+  - Masonry (1.0.1)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - PinYin4Objc (1.1.1)
+  - pop (1.0.9)
+  - ProtocolBuffers (1.9.10)
+  - Shimmer (1.0.2)
+  - UITableView+FDTemplateLayoutCell (1.4)
+  - UMengAnalytics-NO-IDFA (4.0.5)
+  - YTKKeyValueStore (0.1.2):
+    - FMDB (~> 2.0)
+  - YYKit (1.0.7):
+    - YYKit/no-arc (= 1.0.7)
+  - YYKit/no-arc (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking
+  - BaiduMapKit
+  - BlocksKit
+  - Charts
+  - CocoaAsyncSocket
+  - FMDB
+  - GYKit (from `http://git.gyist.com/ios/GYKit.git`, branch `GYKit_1.0`)
+  - IQKeyboardManager
+  - iRate
+  - iVersion
+  - JSPatch
+  - Masonry
+  - pop
+  - ProtocolBuffers
+  - Shimmer
+  - UITableView+FDTemplateLayoutCell
+  - UMengAnalytics-NO-IDFA
+  - YTKKeyValueStore
+
+EXTERNAL SOURCES:
+  GYKit:
+    :branch: GYKit_1.0
+    :git: http://git.gyist.com/ios/GYKit.git
+
+CHECKOUT OPTIONS:
+  GYKit:
+    :commit: 1b1ed752b72daf35fb68852d46764e08c9c05108
+    :git: http://git.gyist.com/ios/GYKit.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  BaiduMapKit: de2a726d5296d6b2dc0e974b683af73153608dcd
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Charts: b48fcc8d7190de910ff9e9748f5360c8ea7856e5
+  CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
+  CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GYKit: 75d031d3ed44981bbd5bf20606383048fb0507d2
+  IQKeyboardManager: 4a6f83b540283c2645aaeba2bd8dc0f09b5c77f8
+  iRate: 599ed07c854e0695f3c605d1b2a64c67d912acb7
+  iVersion: 2b6ffe708672cb494ba3cab150a94800c2892e81
+  JSONModel: 81c06ecf99190a25fa6aafceea5faffa7880868a
+  JSPatch: c689ea4dde17441f2f4a95d40dfedb8900c20099
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  PinYin4Objc: 3fa9673610368330e2dfb688b1d19a35c3930a78
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  ProtocolBuffers: d088180c10072b3d24a9939a6314b7b9bcc2340b
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  UMengAnalytics-NO-IDFA: 965a219b05475ff2a4c09a164139a27bbaa0e25b
+  YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
+  YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
+
+PODFILE CHECKSUM: 97a74000bef142185ac5288c99ce97fd154dd872
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C9034E4D60726166320B619BAA7FE7AC05CC15E3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "000A1C355A8D1DAC3CDF67F8575FA1DC7CFB0C2F" : 0,
+    "C9034E4D60726166320B619BAA7FE7AC05CC15E3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "473E7CCF-D469-4DE2-90D1-D574D46AE584",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "000A1C355A8D1DAC3CDF67F8575FA1DC7CFB0C2F" : "",
+    "C9034E4D60726166320B619BAA7FE7AC05CC15E3" : "GYRestaurantDevelopment"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GYRestaurant",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GYRestaurant.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhangxin129\/HSConsumer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "000A1C355A8D1DAC3CDF67F8575FA1DC7CFB0C2F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/gitlab.gyist.com\/sunqm\/gyrestaurant.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C9034E4D60726166320B619BAA7FE7AC05CC15E3"
+    }
+  ]
+}

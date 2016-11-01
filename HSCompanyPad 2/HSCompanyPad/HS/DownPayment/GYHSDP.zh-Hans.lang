@@ -1,0 +1,46 @@
+/***************************************************/
+/*                   预付定金模块                       */
+/***************************************************/
+"GYHS_Down_Hsb_Down" = "互生币预付定金";
+"GYHS_Down_Payment_Settle" = "预付定金结算";
+"GYHS_Down_Payment_Cancel" = "预付定金撤销";
+"GYHS_Down_Payment" = "预付定金";
+"GYHS_Down_Payment_Cash" = "预付定金金额";
+"GYHS_Down_Swipe_Input_Number" = "请刷卡或输入互生卡号";
+"GYHS_Down_Input_Payment_Cash" = "请输入预付定金金额";
+"GYHS_Down_Real_Cash" = "实付金额";
+"GYHS_Down_Consume_Cash" = "消费金额";
+"GYHS_Down_Input_Consume_Cash" = "请输入消费金额";
+"GYHS_Down_Consume_Point" = "消费积分";
+"GYHS_Down_Select_Edit_Field" = "请选择编辑框";
+"GYHS_Down_Consume_Input_Trade_Passwd" = "请消费者输入8位交易密码";
+"GYHS_Down_Tip" = "提示";
+"GYHS_Down_Sure_HSB_Down" = "确认支付互生币预付定金？";
+"GYHS_Down_Scan_To" = "扫一扫";
+"GYHS_Down_Input_Number_Error_Tip" = "输入卡号错误，请重新输入";
+"GYHS_Down_Input_Cash" = "请输入金额";
+"GYHS_Down_Input_More_Cash" = "请输入大于0的金额";
+"GYHS_Down_Hsb_Down_Success" = "互生币预付定金成功！";
+"GYHS_Down_Hsb_Down_Fail" = "互生币预付定金失败！";
+"GYHS_Down_Payment_Correct" = "预付定金冲正";
+"GYHS_Down_Trade_Time" = "交易时间";
+"GYHS_Down_Operate" = "操作";
+"GYHS_Down_Sure_Cancel_Hsb_Down" = "确认撤销互生币预付定金？";
+"GYHS_Down_Cancel_Hsb_Down_Success" = "互生币预付定金撤销成功!";
+"GYHS_Down_Cancel_Hsb_Down_Fail" = "互生币预付定金撤销失败!";
+"GYHS_Down_Hsb" = "互生币";
+"GYHS_Down_Point_Rate" = "积分比例";
+"GYHS_Down_Sure_Down_Settle" = "确认预付定金结算？";
+"GYHS_Down_Settle_Down_Cash" = "请选择预付定金金额";
+"GYHS_Down_Point_Cash_Tip" = "积分金额小于0.1，不支持积分交易";
+"GYHS_Down_Deductible_Amount_Tip" = "抵扣金额不得大于消费金额的";
+"GYHS_Down_Settle_Cash_Tip" = "您的结算金额大于互生币预付定金，请预付定金撤销后进行消费积分交易。";
+"GYHS_Down_Settle_Hsb_Down_Success" = "互生币预付定金结算成功!";
+"GYHS_Down_Settle_Hsb_Down_Fail" = "互生币预付定金结算失败!";
+"GYHS_Down_Volume" = "抵扣券";
+"GYHS_Down_Equivalent_Hsb" = "折合互生币";
+"GYHS_Down_Point_Cash" = "积分金额";
+"GYHS_Down_Warm_Tip" = "温馨提示";
+"GYHS_Down_Sure" = "确定";
+"GYHS_Down_Cancel" = "取消";
+

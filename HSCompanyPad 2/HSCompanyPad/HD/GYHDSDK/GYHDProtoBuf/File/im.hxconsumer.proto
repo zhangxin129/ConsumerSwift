@@ -1,0 +1,167 @@
+package im;
+
+import "im.hxcommon.proto";
+
+option optimize_for = LITE_RUNTIME;
+
+// 在线咨询 ---- start -----
+// 在线咨询
+message KeFuMsg  
+{
+	required    string 		 fromid			= 1;  // 发收者id，格式为:(w/m/p)_(nc/c/e)_custID
+	required    string 		 toid			= 2;  // 接收者id，格式:(w/m/p)_(nc/c/e)_custID，首次客户端填企业ID
+	required    string  	 msgid       	= 3;  // 客户端默认填空，由服务端生成
+	required    string 		 sessionid		= 4;  // 会话id，首次客户端为空 
+	required    uint64 		 sendtime    	= 5;  // 消息发送时间，客户端填0
+	required    string 		 content     	= 6;  // json格式的消息内容,utf8编码
+	required    bool    	 isreaded    	= 7;  // 消息是否被已读  
+	required    string   	 ordersdetails  = 8;  // 订单信息 --- json格式,utf8编码
+	required    string   	 goodsdetails   = 9;  // 商品信息 --- json格式,utf8编码
+}
+
+// 服务器响应消费者首次在线咨询
+message FriestMsgRsp
+{
+    required    string 		 userid 		= 1;  // 消息回复的对象
+	required    string       curid         	= 2;  // 当前客服id
+	required    string 		 sessionid		= 3;  // 会话id	
+	required    ResultCode 	 code 			= 4;
+}
+
+// 服务器响应在线咨询
+message KeFuMsgRsp
+{
+    required    string 		 userid 		= 1;  // 消息回复的对象
+	required    ResultCode 	 code 			= 2; 	
+}
+            
+// 客服确认消息已收到
+message KeFuMsgAck
+{
+    required    string 		 userid 	    = 1;  // 消息回复的对象
+	required    string  	 msgid          = 2;
+}
+ 
+// 服务器响应消息已收到
+message KeFuMsgAckRsp
+{
+	required    string        userid 		= 1;  // 消息回复的对象
+	required    string  	  msgid         = 2;
+	required    ResultCode    code 			= 3;
+}
+
+// 客服发送已读消息
+message KeFuMsgReadReq
+{
+	required    string        userid        = 1;       
+	required    string        msgid         = 2;
+}
+
+// 服务器响应消息已读
+message KeFuMsgReadRsp
+{
+	required    string        userid 		= 1;  // 消息回复的对象
+	required    string        msgid         = 2;
+	required    ResultCode    code          = 3;
+}
+// 在线咨询 ---- end -----
+
+
+
+// 转移咨询 ---- start -----
+// 请求转移咨询
+message SwitchKeFuReq
+{
+	required    string       newid         	= 1;  // 被转移(新)客服id，格式为:(w/m/p)_(nc/c/e)_custID
+	required    string       curid         	= 2;  // 转移(当前)客服id
+	required    string 		 custid			= 3;  // 消费者id
+	repeated    string 		 seviceidlist	= 4;  // 客服id列表（包括curid）
+	required    string 		 sessionid		= 5;  // 会话id 
+}
+
+// 新客服响应转移是否成功
+message SwitchKeFuRsp
+{
+	required    string       curid         	= 1;  // 转移(当前)客服id，格式为:(w/m/p)_(nc/c/e)_custID
+	required    string       newid         	= 2;  // 被转移(新)客服id
+	required    string 		 custid			= 3;  // 消费者id
+	required    string 		 sessionid		= 4;  // 会话id
+	required    ResultCode 	 code 			= 5;  // 是否成功
+}
+// 转移咨询 ---- end -----
+
+
+// 结束咨询(会话) ---- start -----
+// 请求结束咨询
+message CloserKeFuReq
+{
+	required    string       userid         = 1;  // 结束咨询发起方id，格式为:(w/m/p)_(nc/c/e)_custID
+	required    string       curid         	= 2;  // 结束咨询接收方id
+	required    string 		 sessionid		= 3;  // 会话id 
+}
+
+// 服务器响应请求结束咨询
+message CloserKeFuRsp
+{
+	required    string       userid         = 1;  // 结束咨询发起方id，格式为:(w/m/p)_(nc/c/e)_custID
+	required    string 		 sessionid		= 2;  // 会话id 
+	required    ResultCode 	 code 			= 3;  // 是否成功
+}
+
+// 接收方响应请求结束咨询
+message CloserKeFuRsp
+{
+	required    string       userid         = 1;  // 接收方id，格式为:(w/m/p)_(nc/c/e)_custID
+	required    ResultCode 	 code 			= 2;  // 是否成功
+}
+// 结束咨询(会话) ---- end -----
+
+
+// 查询客服咨询记录 ---- start -----
+// 请求查询客服咨询记录
+message QueryKeFuRecordReq
+{
+	required    string       userid         = 1;  // 查询发起方id，格式为:(w/m/p)_(nc/c/e)_custID
+	required    string 		 fromid			= 2;  
+	required    string       toid         	= 3;  
+	required    string 		 sessionid		= 4;  // 会话id 
+}
+
+// 服务器响应请求查询客服咨询记录
+message QueryKeFuRecordRsp
+{
+	required    string       userid         = 1;  // 查询发起方id，格式为:(w/m/p)_(nc/c/e)_custID
+	repeated    KeFuMsg      recordlist     = 2;  // 咨询记录列表
+	required    ResultCode 	 code 			= 3;  // 是否成功
+}
+// 查询客服咨询记录 ---- end -----
+
+
+// 查询留言 ---- start -----
+// 请求查询留言记录
+message QueryLeaveMsgReq
+{
+	required    string       userid         = 1;  // 查询发起方id，格式为:(w/m/p)_(nc/c/e)_custID
+	required    string 		 companyid		= 2;  // 企业id 
+}
+
+// 服务器响应请求查询留言记录
+message QueryKeFuRecordRsp
+{
+	required    string       userid         = 1;  // 查询发起方id，格式为:(w/m/p)_(nc/c/e)_custID
+	repeated    KeFuMsg      recordlist     = 2;  // 咨询记录列表
+}
+// 查询留言 ---- end -----
+
+
+
+
+
+
+
+
+
+
+
+
+

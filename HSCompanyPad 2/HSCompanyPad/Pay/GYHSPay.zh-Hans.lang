@@ -1,0 +1,38 @@
+/***************************************************/
+/*                   支付模块                       */
+/***************************************************/
+"GYHSPay_DebitCard" = "借记卡";
+"GYHSPay_CreditCard" = "信用卡";
+"GYHSPay_GetVerificationCode" = "获取验证码";
+"GYHSPay_AfterAcquiringS" = "s后再获取";
+"GYHSPay_GetSuccessful" = "验证码已发送至您的手机，请及时查收";
+"GYHSPay_VerificationCodeTip" = "验证码不能超过6位数";
+"GYHSPay_OrderPaymentProcessingSuccess" = "订单支付处理成功";
+"GYHSPay_SMSVerificationCodeIncorrect,pleasere-Being" = "短信验证码错误，请重新获取";
+"GYHSPay_PleaseFirstVerificationCode" = "请先获取验证码";
+"GYHSPay_PleaseEnterCurrectVerificationCode" = "请输入正确验证码";
+"GYHSPay_confirmPay" = "确认付款";
+"GYHSPay_ChooseThePaymentMethod" = "选择支付方式";
+"GYHSPay_SuccessfulOrderSubmission,OrderNumber" = "订单提交成功，订单号： ";
+"GYHSPay_PaymentAmount" = "    支付金额: ";
+"GYHSPay_Balance" = "余额：";
+"GYHSPay_YourHSCurrencyAccountBalanceIsInsufficient,PleaseCchooseAnotherPaymentMethod" = "您的互生币账户余额不足，请选择其它支付方式";
+"GYHSPay_YourCurrencyAccountBalanceIsInsufficient,PleaseCchooseAnotherPaymentMethod" = "您的货币账户余额不足，请选择其它支付方式";
+"GYHSPay_PaymentMoney" = "支付金额";
+"GYHSPay_ChooseOtherPaymentMethod" = "选择其它支付方式";
+"GYHSPay_TransactionPassword" = "交易密码";
+"GYHSPay_InputTradePwd" = "输入8位交易密码";
+"GYHSPay_Tips: 1 HSCurrency = 1 Yuan" = "温馨提示：1互生币＝1人民币";
+"GYHSPay_HSCurrencyPaymentFailure" = "互生币支付失败";
+"GYHSPay_PaymentSuccessful" = "支付成功";
+"GYHSPay_PaymentFailure" = "支付失败";
+"GYHSPay_UnPay" = "未支付";
+"GYHSPay_FastCardPayment" = "快捷卡支付";
+"GYHSPay_AddQuickPaymentBankCard" = "添加快捷支付银行卡";
+"GYHSPay_YouWillReceiveAPaymentOfPingAnBankChinaUnionPayPaymentVerificationCodeMessage" = "您将会收到中国银联发送的向平安银行付款的付款验证码短信。";
+"GYHSPay_RemoveQuickPaymentCardSuccess" = "删除快捷支付卡成功";
+"GYHSPay_CertificationCardPayment" = "认证卡支付";
+"GYHSPay_LocalBillingCurrency" = "本地结算币种：";
+"GYHSPay_RenMinBi" = "人民币";
+"GYHSPay_CurrencyConversionRatio" = "货币转换比率：";
+"GYHSPay_CurrencyConversionAmount" = "折算货币金额：";

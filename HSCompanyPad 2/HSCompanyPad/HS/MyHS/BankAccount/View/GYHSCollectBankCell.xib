@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GYHSCollectBankCell">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="193"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22F-hh-G0d">
+                        <rect key="frame" x="0.0" y="0.0" width="332" height="64"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVh-gE-rcU">
+                                <rect key="frame" x="249" y="18" width="75" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="sjp-HM-kXY"/>
+                                    <constraint firstAttribute="height" constant="28" id="uIC-v0-b06"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="默认" image="gyhs_bank_default">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVH-Z6-ywy">
+                                <rect key="frame" x="18" y="10" width="171" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QVh-gE-rcU" firstAttribute="centerY" secondItem="22F-hh-G0d" secondAttribute="centerY" id="4Ap-Xc-kc7"/>
+                            <constraint firstAttribute="bottom" secondItem="pVH-Z6-ywy" secondAttribute="bottom" constant="7" id="9IE-8e-4I8"/>
+                            <constraint firstAttribute="trailing" secondItem="QVh-gE-rcU" secondAttribute="trailing" constant="8" id="CJ3-cK-jds"/>
+                            <constraint firstItem="pVH-Z6-ywy" firstAttribute="top" secondItem="22F-hh-G0d" secondAttribute="top" constant="10" id="Qla-0e-Muz"/>
+                            <constraint firstItem="pVH-Z6-ywy" firstAttribute="leading" secondItem="22F-hh-G0d" secondAttribute="leading" constant="18" id="sOl-Fw-gHp"/>
+                            <constraint firstItem="pVH-Z6-ywy" firstAttribute="width" secondItem="22F-hh-G0d" secondAttribute="width" multiplier="300:584" id="tD7-Mm-iWB"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2m-ci-oZg">
+                        <rect key="frame" x="0.0" y="64" width="332" height="64"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wa-Ir-ZrU" customClass="GYHSEdgeLabel">
+                                <rect key="frame" x="221" y="0.0" width="111" height="64"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4S-Uh-fHm" customClass="GYHSEdgeLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="221" height="64"/>
+                                <color key="backgroundColor" red="1" green="0.33165907979999998" blue="0.17541630259999999" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r4S-Uh-fHm" firstAttribute="top" secondItem="s2m-ci-oZg" secondAttribute="top" id="C1g-2z-sqP"/>
+                            <constraint firstItem="2wa-Ir-ZrU" firstAttribute="height" secondItem="s2m-ci-oZg" secondAttribute="height" id="Md6-4B-bcM"/>
+                            <constraint firstItem="r4S-Uh-fHm" firstAttribute="leading" secondItem="s2m-ci-oZg" secondAttribute="leading" id="QXZ-iI-bhE"/>
+                            <constraint firstItem="r4S-Uh-fHm" firstAttribute="width" secondItem="s2m-ci-oZg" secondAttribute="width" multiplier="2:3" id="XWX-7h-waq"/>
+                            <constraint firstItem="2wa-Ir-ZrU" firstAttribute="width" secondItem="s2m-ci-oZg" secondAttribute="width" multiplier="1:3" id="ZmJ-e2-w2F"/>
+                            <constraint firstItem="r4S-Uh-fHm" firstAttribute="height" secondItem="s2m-ci-oZg" secondAttribute="height" id="aCC-CG-fKD"/>
+                            <constraint firstAttribute="trailing" secondItem="2wa-Ir-ZrU" secondAttribute="trailing" id="fnJ-WV-Jrg"/>
+                            <constraint firstItem="2wa-Ir-ZrU" firstAttribute="top" secondItem="s2m-ci-oZg" secondAttribute="top" id="zF7-GK-x9x"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Twj-1P-lMC">
+                        <rect key="frame" x="0.0" y="128" width="332" height="64"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBg-yh-Sqf">
+                                <rect key="frame" x="13" y="19" width="70" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="AgR-Rl-DhX"/>
+                                    <constraint firstAttribute="height" constant="27" id="nYs-0E-S2y"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="详情" image="gyhs_bank_bluearrow">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bankClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="pZL-vP-WyL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sy9-bX-9C2">
+                                <rect key="frame" x="249" y="19" width="53" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="Gwj-aB-tB1"/>
+                                    <constraint firstAttribute="height" constant="27" id="SSh-G7-hhS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="删除">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bankClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="hKd-m4-6OK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HBg-yh-Sqf" firstAttribute="centerY" secondItem="Twj-1P-lMC" secondAttribute="centerY" id="0h2-uP-Udx"/>
+                            <constraint firstItem="HBg-yh-Sqf" firstAttribute="leading" secondItem="Twj-1P-lMC" secondAttribute="leading" constant="13" id="2R7-hO-Tuu"/>
+                            <constraint firstItem="Sy9-bX-9C2" firstAttribute="centerY" secondItem="Twj-1P-lMC" secondAttribute="centerY" id="7Vx-Eo-9qY"/>
+                            <constraint firstAttribute="trailing" secondItem="Sy9-bX-9C2" secondAttribute="trailing" constant="30" id="RQD-hO-sU9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="s2m-ci-oZg" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="1:3" id="458-b4-Elr"/>
+                <constraint firstItem="s2m-ci-oZg" firstAttribute="top" secondItem="22F-hh-G0d" secondAttribute="bottom" id="6X6-PD-4z5"/>
+                <constraint firstItem="s2m-ci-oZg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9fV-yd-UPA"/>
+                <constraint firstAttribute="trailing" secondItem="22F-hh-G0d" secondAttribute="trailing" id="DtV-Cq-d3A"/>
+                <constraint firstItem="Twj-1P-lMC" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="1:3" id="Hn7-cW-fHU"/>
+                <constraint firstItem="22F-hh-G0d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Kcz-zJ-Oal"/>
+                <constraint firstItem="Twj-1P-lMC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NmD-AC-ZX2"/>
+                <constraint firstItem="22F-hh-G0d" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="1:3" id="OFv-Oc-BMV"/>
+                <constraint firstItem="22F-hh-G0d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UAc-fp-xxL"/>
+                <constraint firstItem="Twj-1P-lMC" firstAttribute="top" secondItem="s2m-ci-oZg" secondAttribute="bottom" id="X0z-n9-zPp"/>
+                <constraint firstAttribute="trailing" secondItem="s2m-ci-oZg" secondAttribute="trailing" id="gFg-CQ-ZQM"/>
+                <constraint firstAttribute="trailing" secondItem="Twj-1P-lMC" secondAttribute="trailing" id="sf1-fN-06t"/>
+            </constraints>
+            <size key="customSize" width="332" height="48"/>
+            <connections>
+                <outlet property="bankCurrencyCode" destination="2wa-Ir-ZrU" id="MBf-oY-q8s"/>
+                <outlet property="bankName" destination="pVH-Z6-ywy" id="C2I-Ja-qbc"/>
+                <outlet property="bankNumber" destination="r4S-Uh-fHm" id="xgz-Mi-dRx"/>
+                <outlet property="defaultButton" destination="QVh-gE-rcU" id="GNx-V7-CTk"/>
+            </connections>
+            <point key="canvasLocation" x="487" y="193.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gyhs_bank_bluearrow" width="9" height="17"/>
+        <image name="gyhs_bank_default" width="15" height="15"/>
+    </resources>
+</document>

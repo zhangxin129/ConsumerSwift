@@ -1,0 +1,67 @@
+//
+//  GYHDAudioTool.h
+//  HSConsumer
+//
+//  Created by shiang on 16/2/4.
+//  @深圳市归一科技研发有限公司_iOS
+//  @版权所有  禁止传播
+//  @级别：绝密
+//  Copyright © 2016年 SHENZHEN GUIYI SCIENCE AND TECHNOLOGY DEVELOP CO.,LTD. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+typedef NS_ENUM(NSInteger, GYHDAudioToolPlayerState) {
+    GYHDAudioToolPlayerSuccess,
+    GYHDAudioToolPlayerFailure
+};
+
+typedef NS_ENUM(NSInteger, GYHDAudioToolRecordState) {
+    GYHDAudioToolRecordSuccess,
+    GYHDAudioToolRecordFailure,
+    GYHDAudioToolRecordProhibit, //录音禁止
+    GYHDAudioToolRecordSurpass30Seconds // 超过30秒
+};
+typedef void (^completeRecordBlock)(GYHDAudioToolRecordState state);
+typedef void (^completePlayeBlock)(GYHDAudioToolPlayerState state);
+
+@protocol GYHDAudioToolDelegate <NSObject>
+
+- (void)audioRecorderDidFinishRecordingWithPath:(NSString*)mpath;
+
+@end
+
+@interface GYHDAudioTool : NSObject
++ (instancetype)sharedInstance;
+
+@property (nonatomic, weak) id<GYHDAudioToolDelegate> delegate;
+@property (nonatomic, assign)BOOL recordFilsh;
+/**开始录音*/
+- (void)startRecord;
+- (void)startRecord:(completeRecordBlock)block;
+/**结束录音*/
+- (void)stopRecord;
+/**播放MP3文件*/
+- (void)playMp3WithFilePath:(NSString*)filePath complete:(completePlayeBlock)block;
+/**播放MP3文件*/
+- (void)playMp3WithUrl:(NSURL*)url complete:(completePlayeBlock)block;
+/**开始播放 data为 MP3 文件*/
+- (void)startPlayingWithData:(NSData*)data complete:(completePlayeBlock)block;
+/**结束播放*/
+- (void)stopPlaying;
+/**删除文件*/
+- (BOOL)deleteAudioWithPath:(NSString *)path;
+/**获取MP3data*/
+- (NSData*)mp3Data;
+/**获得录音长度*/
+- (NSTimeInterval)gettime;
+/**MP3路劲*/
+- (NSString *)mp3pathName;
+/**MP3名字*/
+- (NSString *)mp3NameString;
+/**是否可用*/
+- (BOOL)isUsering;
+/**是否播放*/
+- (BOOL)isplayer;
+@end
+

@@ -1,0 +1,73 @@
+
+/* Class = "UILabel"; text = "积分："; ObjectID = "2Dr-sP-0Uv"; */
+"2Dr-sP-0Uv.text" = "Points:";
+
+/* Class = "UILabel"; text = "折扣率(50%-100%)："; ObjectID = "3X5-PC-Ti7"; */
+"3X5-PC-Ti7.text" = "Discount rate (50% -100%):";
+
+/* Class = "UILabel"; text = "服务内容："; ObjectID = "5bk-Wb-oMc"; */
+"5bk-Wb-oMc.text" = "Service Content:";
+
+/* Class = "UIButton"; normalTitle = "定金支付"; ObjectID = "6IY-X6-EUF"; */
+"6IY-X6-EUF.normalTitle" = "Deposit payment";
+
+/* Class = "UIButton"; selectedTitle = "定金支付"; ObjectID = "6IY-X6-EUF"; */
+"6IY-X6-EUF.selectedTitle" = "Deposit payment";
+
+/* Class = "UILabel"; text = "应收金额："; ObjectID = "EJH-TW-Sn0"; */
+"EJH-TW-Sn0.text" = "Amount receivable:";
+
+/* Class = "UILabel"; text = "张,面值(10元)"; ObjectID = "Eku-Jm-MVi"; */
+"Eku-Jm-MVi.text" = "Zhang, par value (¥ 10)";
+
+/* Class = "UILabel"; text = "订单号："; ObjectID = "Mtp-fK-rIN"; */
+"Mtp-fK-rIN.text" = "order number:";
+
+/* Class = "UILabel"; text = "折后金额："; ObjectID = "P5U-jc-5Id"; */
+"P5U-jc-5Id.text" = "Amount after discount:";
+
+/* Class = "UILabel"; text = "金额："; ObjectID = "S0B-KY-iWR"; */
+"S0B-KY-iWR.text" = "Amount:";
+
+/* Class = "UILabel"; text = "互生抵扣券："; ObjectID = "Txu-8w-pzg"; */
+"Txu-8w-pzg.text" = "Alternate deductible coupons:";
+
+/* Class = "UILabel"; text = "退还定金："; ObjectID = "Uae-ms-rOh"; */
+"Uae-ms-rOh.text" = "Refundable deposit:";
+
+/* Class = "UILabel"; text = "其他服务项目"; ObjectID = "a8D-Nw-wWU"; */
+"a8D-Nw-wWU.text" = "Other services";
+
+/* Class = "UIButton"; normalTitle = "退还定金(退回原账户)"; ObjectID = "dxM-F0-fyu"; */
+"dxM-F0-fyu.normalTitle" = "Refundable deposit (returned to the original account)";
+
+/* Class = "UIButton"; selectedTitle = "退还定金(退回原账户)"; ObjectID = "dxM-F0-fyu"; */
+"dxM-F0-fyu.selectedTitle" = "Refundable deposit (returned to the original account)";
+
+/* Class = "UILabel"; text = "互生号/手机号："; ObjectID = "eXd-8s-UOl"; */
+"eXd-8s-UOl.text" = "Alternate number / phone number:";
+
+/* Class = "UILabel"; text = "已收定金："; ObjectID = "gt6-pp-JjQ"; */
+"gt6-pp-JjQ.text" = "received the deposit:";
+
+/* Class = "UIButton"; normalTitle = "互生抵扣券"; ObjectID = "nHJ-lB-cZ4"; */
+"nHJ-lB-cZ4.normalTitle" = "Alternate deductible coupons";
+
+/* Class = "UIButton"; selectedTitle = "互生抵扣券"; ObjectID = "nHJ-lB-cZ4"; */
+"nHJ-lB-cZ4.selectedTitle" = "Alternate deductible coupons";
+
+/* Class = "UILabel"; text = "折扣方式："; ObjectID = "sfk-P3-SEA"; */
+"sfk-P3-SEA.text" = "Discount ways:";
+
+/* Class = "UIButton"; normalTitle = "店内折扣"; ObjectID = "wIb-jD-gTr"; */
+"wIb-jD-gTr.normalTitle" = "Discount store";
+
+/* Class = "UIButton"; selectedTitle = "店内折扣"; ObjectID = "wIb-jD-gTr"; */
+"wIb-jD-gTr.selectedTitle" = "Discount store";
+
+/* Class = "UILabel"; text = "订单金额："; ObjectID = "wxa-pP-szL"; */
+"wxa-pP-szL.text" = "order amount:";
+
+/* Class = "UILabel"; text = "消费结算金额："; ObjectID = "ygT-n8-JiN"; */
+"ygT-n8-JiN.text" = "Consumer Settlement Amount:";
+

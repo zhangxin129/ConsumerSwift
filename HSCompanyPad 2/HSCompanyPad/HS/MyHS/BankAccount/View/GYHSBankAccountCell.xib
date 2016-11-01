@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GYHSBankAccountCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fy9-Mo-s2K" customClass="GYHSEdgeLabel">
+                        <rect key="frame" x="233" y="8" width="527" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfj-8C-3m0" customClass="GYHSEdgeLabel">
+                        <rect key="frame" x="8" y="8" width="224" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fy9-Mo-s2K" firstAttribute="leading" secondItem="cfj-8C-3m0" secondAttribute="trailing" constant="1" id="Gqs-nu-zCr"/>
+                    <constraint firstItem="cfj-8C-3m0" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="350:1200" id="Iba-ud-MWf"/>
+                    <constraint firstItem="Fy9-Mo-s2K" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="IuE-8S-u0C"/>
+                    <constraint firstItem="cfj-8C-3m0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Kqv-yX-UTE"/>
+                    <constraint firstItem="Fy9-Mo-s2K" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gmK-cU-4wC"/>
+                    <constraint firstItem="cfj-8C-3m0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="hlK-49-VZB"/>
+                    <constraint firstItem="cfj-8C-3m0" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="u5K-Y5-bkU"/>
+                    <constraint firstItem="Fy9-Mo-s2K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="xDW-LY-mO7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bankLeftLabel" destination="cfj-8C-3m0" id="pXj-eN-xcM"/>
+                <outlet property="bankRightLabel" destination="Fy9-Mo-s2K" id="kyh-zm-GQF"/>
+            </connections>
+            <point key="canvasLocation" x="287" y="237"/>
+        </tableViewCell>
+    </objects>
+</document>

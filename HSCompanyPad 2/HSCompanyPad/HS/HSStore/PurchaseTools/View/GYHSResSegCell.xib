@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GYHSResSegCell">
+            <rect key="frame" x="0.0" y="0.0" width="791" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="791" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第10段托管企业系统消费者资源" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1c-xB-HNl">
+                        <rect key="frame" x="16" y="58" width="390" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="SxJ-Lw-Rfv"/>
+                            <constraint firstAttribute="width" constant="390" id="ukO-CV-LbJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lq9-gf-VZf">
+                        <rect key="frame" x="406" y="59" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="V5G-Rl-hRo"/>
+                            <constraint firstAttribute="width" constant="42" id="yYP-MY-zC4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gyhs_HSBCoin" translatesAutoresizingMaskIntoConstraints="NO" id="Bag-7F-A3F">
+                        <rect key="frame" x="458" y="59" width="21" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="4yB-N5-ulU"/>
+                            <constraint firstAttribute="height" constant="21" id="OHw-g5-kai"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20,000.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsa-9V-Dhu">
+                        <rect key="frame" x="484" y="58" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="X48-nl-tvG"/>
+                            <constraint firstAttribute="height" constant="21" id="rgJ-Vi-mtD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jsa-9V-Dhu" firstAttribute="leading" secondItem="Bag-7F-A3F" secondAttribute="trailing" constant="5" id="8I1-Wk-NBb"/>
+                    <constraint firstItem="Bag-7F-A3F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="59" id="BoG-ho-Pbo"/>
+                    <constraint firstItem="L1c-xB-HNl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="JH1-uY-zQ0"/>
+                    <constraint firstItem="lq9-gf-VZf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="59" id="KQO-Lc-fpR"/>
+                    <constraint firstItem="Jsa-9V-Dhu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="58" id="TBG-rk-bZQ"/>
+                    <constraint firstItem="L1c-xB-HNl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="58" id="av7-0G-uLw"/>
+                    <constraint firstItem="Bag-7F-A3F" firstAttribute="leading" secondItem="lq9-gf-VZf" secondAttribute="trailing" constant="10" id="g58-nM-kVM"/>
+                    <constraint firstItem="lq9-gf-VZf" firstAttribute="leading" secondItem="L1c-xB-HNl" secondAttribute="trailing" id="vVC-HB-RJW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="priceLable" destination="Jsa-9V-Dhu" id="7Yh-lD-MbC"/>
+                <outlet property="priceTitleLable" destination="lq9-gf-VZf" id="Z22-OR-nBA"/>
+                <outlet property="resSegNameLable" destination="L1c-xB-HNl" id="WGY-kQ-y9c"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gyhs_HSBCoin" width="26" height="26"/>
+    </resources>
+</document>

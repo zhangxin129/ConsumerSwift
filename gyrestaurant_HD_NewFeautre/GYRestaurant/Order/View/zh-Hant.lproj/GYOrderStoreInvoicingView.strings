@@ -1,0 +1,73 @@
+
+/* Class = "UILabel"; text = "積分："; ObjectID = "2Dr-sP-0Uv"; */
+"2Dr-sP-0Uv.text" = "積分：";
+
+/* Class = "UILabel"; text = "折扣率(50%-100%)："; ObjectID = "3X5-PC-Ti7"; */
+"3X5-PC-Ti7.text" = "折扣率(50%-100%)：";
+
+/* Class = "UILabel"; text = "服務內容："; ObjectID = "5bk-Wb-oMc"; */
+"5bk-Wb-oMc.text" = "服務內容：";
+
+/* Class = "UIButton"; normalTitle = "定金支付"; ObjectID = "6IY-X6-EUF"; */
+"6IY-X6-EUF.normalTitle" = "定金支付";
+
+/* Class = "UIButton"; selectedTitle = "定金支付"; ObjectID = "6IY-X6-EUF"; */
+"6IY-X6-EUF.selectedTitle" = "定金支付";
+
+/* Class = "UILabel"; text = "應收金額："; ObjectID = "EJH-TW-Sn0"; */
+"EJH-TW-Sn0.text" = "應收金額：";
+
+/* Class = "UILabel"; text = "張,面值(10元)"; ObjectID = "Eku-Jm-MVi"; */
+"Eku-Jm-MVi.text" = "張,面值10元";
+
+/* Class = "UILabel"; text = "訂單號："; ObjectID = "Mtp-fK-rIN"; */
+"Mtp-fK-rIN.text" = "訂單號：";
+
+/* Class = "UILabel"; text = "折後金額："; ObjectID = "P5U-jc-5Id"; */
+"P5U-jc-5Id.text" = "折後金額：";
+
+/* Class = "UILabel"; text = "金額："; ObjectID = "S0B-KY-iWR"; */
+"S0B-KY-iWR.text" = "金額：";
+
+/* Class = "UILabel"; text = "互生抵扣券："; ObjectID = "Txu-8w-pzg"; */
+"Txu-8w-pzg.text" = "互生抵扣券：";
+
+/* Class = "UILabel"; text = "退還定金："; ObjectID = "Uae-ms-rOh"; */
+"Uae-ms-rOh.text" = "退還定金：";
+
+/* Class = "UILabel"; text = "其他服務項目"; ObjectID = "a8D-Nw-wWU"; */
+"a8D-Nw-wWU.text" = "其它服務項目";
+
+/* Class = "UIButton"; normalTitle = "退還定金(退還原賬戶)"; ObjectID = "dxM-F0-fyu"; */
+"dxM-F0-fyu.normalTitle" = "退還定金";
+
+/* Class = "UIButton"; selectedTitle = "退還定金(退還原賬戶)"; ObjectID = "dxM-F0-fyu"; */
+"dxM-F0-fyu.selectedTitle" = "退還定金";
+
+/* Class = "UILabel"; text = "互生號/手機號："; ObjectID = "eXd-8s-UOl"; */
+"eXd-8s-UOl.text" = "互生號/手機號：";
+
+/* Class = "UILabel"; text = "已收定金："; ObjectID = "gt6-pp-JjQ"; */
+"gt6-pp-JjQ.text" = "已收定金：";
+
+/* Class = "UIButton"; normalTitle = "互生抵扣券"; ObjectID = "nHJ-lB-cZ4"; */
+"nHJ-lB-cZ4.normalTitle" = "互生消費抵扣券";
+
+/* Class = "UIButton"; selectedTitle = "互生抵扣券"; ObjectID = "nHJ-lB-cZ4"; */
+"nHJ-lB-cZ4.selectedTitle" = "互生消費抵扣券";
+
+/* Class = "UILabel"; text = "折扣方式："; ObjectID = "sfk-P3-SEA"; */
+"sfk-P3-SEA.text" = "折扣方式：";
+
+/* Class = "UIButton"; normalTitle = "店內折扣"; ObjectID = "wIb-jD-gTr"; */
+"wIb-jD-gTr.normalTitle" = "店內折扣";
+
+/* Class = "UIButton"; selectedTitle = "店內折扣"; ObjectID = "wIb-jD-gTr"; */
+"wIb-jD-gTr.selectedTitle" = "店內折扣";
+
+/* Class = "UILabel"; text = "訂單金額："; ObjectID = "wxa-pP-szL"; */
+"wxa-pP-szL.text" = "訂單金額：";
+
+/* Class = "UILabel"; text = "消費結算金額："; ObjectID = "ygT-n8-JiN"; */
+"ygT-n8-JiN.text" = "消費結算金額：";
+

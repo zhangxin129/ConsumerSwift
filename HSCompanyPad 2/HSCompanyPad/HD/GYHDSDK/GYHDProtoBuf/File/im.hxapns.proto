@@ -1,0 +1,18 @@
+package im;
+
+import "im.hxcommon.proto";
+
+//APNS推送
+message ApnsPushReq
+{
+    required   string  deviceVersion = 1;   //ios设备系统版本
+    required   string  token    =  2;       //ios设备toke
+    optional   string  msgid    =  3;       //消息id
+    optional   string  toid     =  4;	    //被推送者custid(msgid和toid联合起来确定mongo数据库中的唯一一条记录)
+}
+
+//APNS推送响应
+message ApnsPushRsp
+{
+    required   ResultCode  code =  1;       //错误码，0代表成功，非0代表失败(详细失败原因见im.hxcommon.proto文件定义)
+}
