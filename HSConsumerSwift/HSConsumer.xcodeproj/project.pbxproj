@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1830F48D1DC869360099ECE9 /* GYHDMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830F4861DC869360099ECE9 /* GYHDMainViewController.swift */; };
+		1830F48E1DC869360099ECE9 /* GYHEEasyBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830F4881DC869360099ECE9 /* GYHEEasyBuyViewController.swift */; };
+		1830F48F1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830F48A1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift */; };
+		1830F4901DC869360099ECE9 /* GYHSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830F48C1DC869360099ECE9 /* GYHSMainViewController.swift */; };
 		183E86D71DC72C9D00C80ED6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E86D61DC72C9D00C80ED6 /* RootViewController.swift */; };
 		183E86E01DC72D9100C80ED6 /* CustomMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E86DD1DC72D9100C80ED6 /* CustomMenuController.swift */; };
 		183E86E11DC72D9100C80ED6 /* DrawerMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E86DE1DC72D9100C80ED6 /* DrawerMenuController.swift */; };
@@ -16,10 +20,6 @@
 		18E7CA4F1DC6F5C90025FED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E7CA4D1DC6F5C90025FED0 /* LaunchScreen.storyboard */; };
 		18E7CA5A1DC6F5C90025FED0 /* HSConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CA591DC6F5C90025FED0 /* HSConsumerTests.swift */; };
 		18E7CA651DC6F5CA0025FED0 /* HSConsumerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CA641DC6F5CA0025FED0 /* HSConsumerUITests.swift */; };
-		18E7CA751DC6F9180025FED0 /* GYHDMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CA741DC6F9180025FED0 /* GYHDMainViewController.swift */; };
-		18E7CA771DC6F9700025FED0 /* GYHEVisitSurroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CA761DC6F9700025FED0 /* GYHEVisitSurroundViewController.swift */; };
-		18E7CA791DC6F9900025FED0 /* GYHEEasyBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CA781DC6F9900025FED0 /* GYHEEasyBuyViewController.swift */; };
-		18E7CA7B1DC6F9B80025FED0 /* GYHSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CA7A1DC6F9B80025FED0 /* GYHSMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1830F4861DC869360099ECE9 /* GYHDMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHDMainViewController.swift; sourceTree = "<group>"; };
+		1830F4881DC869360099ECE9 /* GYHEEasyBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHEEasyBuyViewController.swift; sourceTree = "<group>"; };
+		1830F48A1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHEVisitSurroundViewController.swift; sourceTree = "<group>"; };
+		1830F48C1DC869360099ECE9 /* GYHSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHSMainViewController.swift; sourceTree = "<group>"; };
 		183E86D61DC72C9D00C80ED6 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = ../RootViewController.swift; sourceTree = "<group>"; };
 		183E86DD1DC72D9100C80ED6 /* CustomMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMenuController.swift; sourceTree = "<group>"; };
 		183E86DE1DC72D9100C80ED6 /* DrawerMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerMenuController.swift; sourceTree = "<group>"; };
@@ -55,10 +59,6 @@
 		18E7CA601DC6F5CA0025FED0 /* HSConsumerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSConsumerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E7CA641DC6F5CA0025FED0 /* HSConsumerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConsumerUITests.swift; sourceTree = "<group>"; };
 		18E7CA661DC6F5CA0025FED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18E7CA741DC6F9180025FED0 /* GYHDMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYHDMainViewController.swift; path = ../GYHDMainViewController.swift; sourceTree = "<group>"; };
-		18E7CA761DC6F9700025FED0 /* GYHEVisitSurroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYHEVisitSurroundViewController.swift; path = ../GYHEVisitSurroundViewController.swift; sourceTree = "<group>"; };
-		18E7CA781DC6F9900025FED0 /* GYHEEasyBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYHEEasyBuyViewController.swift; path = ../GYHEEasyBuyViewController.swift; sourceTree = "<group>"; };
-		18E7CA7A1DC6F9B80025FED0 /* GYHSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYHSMainViewController.swift; path = ../GYHSMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,34 +86,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		183E86D81DC72D3E00C80ED6 /* HD */ = {
+		1830F4851DC869360099ECE9 /* HD */ = {
 			isa = PBXGroup;
 			children = (
-				18E7CA741DC6F9180025FED0 /* GYHDMainViewController.swift */,
+				1830F4861DC869360099ECE9 /* GYHDMainViewController.swift */,
 			);
 			path = HD;
 			sourceTree = "<group>";
 		};
-		183E86D91DC72D3E00C80ED6 /* HEEB */ = {
+		1830F4871DC869360099ECE9 /* HEEB */ = {
 			isa = PBXGroup;
 			children = (
-				18E7CA781DC6F9900025FED0 /* GYHEEasyBuyViewController.swift */,
+				1830F4881DC869360099ECE9 /* GYHEEasyBuyViewController.swift */,
 			);
 			path = HEEB;
 			sourceTree = "<group>";
 		};
-		183E86DA1DC72D3E00C80ED6 /* HESR */ = {
+		1830F4891DC869360099ECE9 /* HESR */ = {
 			isa = PBXGroup;
 			children = (
-				18E7CA761DC6F9700025FED0 /* GYHEVisitSurroundViewController.swift */,
+				1830F48A1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift */,
 			);
 			path = HESR;
 			sourceTree = "<group>";
 		};
-		183E86DB1DC72D3E00C80ED6 /* HS */ = {
+		1830F48B1DC869360099ECE9 /* HS */ = {
 			isa = PBXGroup;
 			children = (
-				18E7CA7A1DC6F9B80025FED0 /* GYHSMainViewController.swift */,
+				1830F48C1DC869360099ECE9 /* GYHSMainViewController.swift */,
 			);
 			path = HS;
 			sourceTree = "<group>";
@@ -152,10 +152,10 @@
 		18E7CA431DC6F5C90025FED0 /* HSConsumer */ = {
 			isa = PBXGroup;
 			children = (
-				183E86D81DC72D3E00C80ED6 /* HD */,
-				183E86D91DC72D3E00C80ED6 /* HEEB */,
-				183E86DA1DC72D3E00C80ED6 /* HESR */,
-				183E86DB1DC72D3E00C80ED6 /* HS */,
+				1830F4851DC869360099ECE9 /* HD */,
+				1830F4871DC869360099ECE9 /* HEEB */,
+				1830F4891DC869360099ECE9 /* HESR */,
+				1830F48B1DC869360099ECE9 /* HS */,
 				183E86DC1DC72D6100C80ED6 /* Base */,
 				18E7CA441DC6F5C90025FED0 /* AppDelegate.swift */,
 				18E7CA4B1DC6F5C90025FED0 /* Assets.xcassets */,
@@ -313,14 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E7CA751DC6F9180025FED0 /* GYHDMainViewController.swift in Sources */,
-				18E7CA771DC6F9700025FED0 /* GYHEVisitSurroundViewController.swift in Sources */,
 				183E86D71DC72C9D00C80ED6 /* RootViewController.swift in Sources */,
+				1830F4901DC869360099ECE9 /* GYHSMainViewController.swift in Sources */,
 				183E86E11DC72D9100C80ED6 /* DrawerMenuController.swift in Sources */,
-				18E7CA791DC6F9900025FED0 /* GYHEEasyBuyViewController.swift in Sources */,
 				18E7CA451DC6F5C90025FED0 /* AppDelegate.swift in Sources */,
-				18E7CA7B1DC6F9B80025FED0 /* GYHSMainViewController.swift in Sources */,
+				1830F48D1DC869360099ECE9 /* GYHDMainViewController.swift in Sources */,
 				183E86E01DC72D9100C80ED6 /* CustomMenuController.swift in Sources */,
+				1830F48F1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift in Sources */,
+				1830F48E1DC869360099ECE9 /* GYHEEasyBuyViewController.swift in Sources */,
 				183E86E21DC72D9100C80ED6 /* DrawerMenuExplain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
