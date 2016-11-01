@@ -19,7 +19,7 @@ class ViewController: UIViewController,NextVcViewControllerDelegate{
         
        self.clickBtn  = UIButton (type : UIButtonType.Custom)
         
-        self.title = "one"
+        self.title = "next"
         
          self.clickBtn! .setTitle("click", forState: UIControlState.Normal)
         
