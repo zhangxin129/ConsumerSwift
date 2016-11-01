@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var drawerMenuController:DrawerMenuController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
        
@@ -53,13 +54,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         tabbar.viewControllers = [hdNav,heSRNav,heEBNav,hsNav]
         
+        let rootVc = RootViewController()
+        
+         rootVc.view.backgroundColor = UIColor.whiteColor()
+        
+        let hsLoginVc = GYHSloginViewController()
+        hsLoginVc.view.backgroundColor = UIColor.whiteColor()
+        self.drawerMenuController = DrawerMenuController()
+        self.drawerMenuController!.rootViewController = tabbar
+        self.drawerMenuController!.leftViewController = hsLoginVc
+        
         self.window = UIWindow()
         
         self.window!.frame = UIScreen .mainScreen().bounds
         
         self.window!.backgroundColor = UIColor .whiteColor()
         
-        self.window!.rootViewController = tabbar
+        self.window!.rootViewController = drawerMenuController
         
         self.window!.makeKeyAndVisible()
         

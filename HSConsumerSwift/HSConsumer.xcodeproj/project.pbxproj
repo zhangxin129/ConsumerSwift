@@ -11,6 +11,8 @@
 		1830F48E1DC869360099ECE9 /* GYHEEasyBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830F4881DC869360099ECE9 /* GYHEEasyBuyViewController.swift */; };
 		1830F48F1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830F48A1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift */; };
 		1830F4901DC869360099ECE9 /* GYHSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830F48C1DC869360099ECE9 /* GYHSMainViewController.swift */; };
+		1830F4921DC887AC0099ECE9 /* GYHSloginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830F4911DC887AC0099ECE9 /* GYHSloginViewController.swift */; };
+		1830F4961DC8BF420099ECE9 /* MessageMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830F4951DC8BF420099ECE9 /* MessageMainTableViewCell.swift */; };
 		183E86D71DC72C9D00C80ED6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E86D61DC72C9D00C80ED6 /* RootViewController.swift */; };
 		183E86E01DC72D9100C80ED6 /* CustomMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E86DD1DC72D9100C80ED6 /* CustomMenuController.swift */; };
 		183E86E11DC72D9100C80ED6 /* DrawerMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E86DE1DC72D9100C80ED6 /* DrawerMenuController.swift */; };
@@ -44,6 +46,8 @@
 		1830F4881DC869360099ECE9 /* GYHEEasyBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHEEasyBuyViewController.swift; sourceTree = "<group>"; };
 		1830F48A1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHEVisitSurroundViewController.swift; sourceTree = "<group>"; };
 		1830F48C1DC869360099ECE9 /* GYHSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHSMainViewController.swift; sourceTree = "<group>"; };
+		1830F4911DC887AC0099ECE9 /* GYHSloginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHSloginViewController.swift; sourceTree = "<group>"; };
+		1830F4951DC8BF420099ECE9 /* MessageMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageMainTableViewCell.swift; sourceTree = "<group>"; };
 		183E86D61DC72C9D00C80ED6 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = ../RootViewController.swift; sourceTree = "<group>"; };
 		183E86DD1DC72D9100C80ED6 /* CustomMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMenuController.swift; sourceTree = "<group>"; };
 		183E86DE1DC72D9100C80ED6 /* DrawerMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerMenuController.swift; sourceTree = "<group>"; };
@@ -89,7 +93,8 @@
 		1830F4851DC869360099ECE9 /* HD */ = {
 			isa = PBXGroup;
 			children = (
-				1830F4861DC869360099ECE9 /* GYHDMainViewController.swift */,
+				1830F4941DC8BF0D0099ECE9 /* View */,
+				1830F4931DC8BEFE0099ECE9 /* Controller */,
 			);
 			path = HD;
 			sourceTree = "<group>";
@@ -114,8 +119,25 @@
 			isa = PBXGroup;
 			children = (
 				1830F48C1DC869360099ECE9 /* GYHSMainViewController.swift */,
+				1830F4911DC887AC0099ECE9 /* GYHSloginViewController.swift */,
 			);
 			path = HS;
+			sourceTree = "<group>";
+		};
+		1830F4931DC8BEFE0099ECE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1830F4861DC869360099ECE9 /* GYHDMainViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1830F4941DC8BF0D0099ECE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1830F4951DC8BF420099ECE9 /* MessageMainTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		183E86DC1DC72D6100C80ED6 /* Base */ = {
@@ -320,7 +342,9 @@
 				1830F48D1DC869360099ECE9 /* GYHDMainViewController.swift in Sources */,
 				183E86E01DC72D9100C80ED6 /* CustomMenuController.swift in Sources */,
 				1830F48F1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift in Sources */,
+				1830F4921DC887AC0099ECE9 /* GYHSloginViewController.swift in Sources */,
 				1830F48E1DC869360099ECE9 /* GYHEEasyBuyViewController.swift in Sources */,
+				1830F4961DC8BF420099ECE9 /* MessageMainTableViewCell.swift in Sources */,
 				183E86E21DC72D9100C80ED6 /* DrawerMenuExplain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
