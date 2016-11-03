@@ -59,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          rootVc.view.backgroundColor = UIColor.whiteColor()
         
         let hsLoginVc = GYHSloginViewController()
-        hsLoginVc.view.backgroundColor = UIColor.whiteColor()
+        hsLoginVc.view.backgroundColor = UIColor.brownColor()
         self.drawerMenuController = DrawerMenuController()
         self.drawerMenuController!.rootViewController = tabbar
         self.drawerMenuController!.leftViewController = hsLoginVc

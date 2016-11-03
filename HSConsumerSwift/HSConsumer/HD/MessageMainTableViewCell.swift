@@ -8,11 +8,10 @@
 
 import UIKit
 
-var mes :message?
+
 
 class MessageMainTableViewCell: UITableViewCell {
-    
-    
+
     var iconImg :UIImageView?
     
     var nameLabel : UILabel?
@@ -43,7 +42,7 @@ class MessageMainTableViewCell: UITableViewCell {
         
         self.contentView .addSubview(self.iconImg!)
         
-        self.nameLabel = UILabel(frame : CGRectMake(CGRectGetMaxX(self.iconImg!.frame)+10,10,200,30))
+        self.nameLabel = UILabel(frame : CGRectMake(CGRectGetMaxX(self.iconImg!.frame)+10,10,150,30))
         
         self.nameLabel?.font = UIFont .systemFontOfSize(15.0)
         
@@ -56,7 +55,7 @@ class MessageMainTableViewCell: UITableViewCell {
         
         self.contentView .addSubview(self.timeLabel!)
         
-        self.contentLabel = UILabel(frame : CGRectMake(CGRectGetMaxX(self.iconImg!.frame),CGRectGetMaxY(self.nameLabel!.frame)+10,200,20))
+        self.contentLabel = UILabel(frame : CGRectMake(CGRectGetMaxX(self.iconImg!.frame)+10,CGRectGetMaxY(self.nameLabel!.frame)+10,200,20))
         
          self.contentLabel?.font = UIFont .systemFontOfSize(13.0)
         
@@ -64,25 +63,27 @@ class MessageMainTableViewCell: UITableViewCell {
         
     }
     
+    var _mes :message?
+    
     var mes : message {
         
         set{
+            _mes = newValue
             
-        self.iconImg!.image = UIImage (named: self.mes.icon!)
+            self.iconImg!.image = UIImage (named: self.mes.icon!)
         
-         self.nameLabel?.text = self.mes.name
+            self.nameLabel?.text = self.mes.name
             
             self.contentLabel?.text = self.mes.content
             
             self.timeLabel!.text = self.mes.time
+        }
+        
+        get{
             
+            return _mes!
         }
     
-        get{
-        
-            return self.mes
-        
-        }
     }
     
 
