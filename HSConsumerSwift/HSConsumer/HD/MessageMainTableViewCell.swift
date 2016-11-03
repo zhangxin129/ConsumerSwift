@@ -52,7 +52,7 @@ class MessageMainTableViewCell: UITableViewCell {
 
         self.timeLabel = UILabel(frame : CGRectMake(CGRectGetMaxX(self.nameLabel!.frame)+10,10,200,30))
         
-         self.timeLabel?.font = UIFont .systemFontOfSize(12.0)
+         self.timeLabel?.font = UIFont .systemFontOfSize(13.0)
         
         self.contentView .addSubview(self.timeLabel!)
         
