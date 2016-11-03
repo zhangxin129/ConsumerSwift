@@ -155,7 +155,7 @@ class GYHDMainViewController: UIViewController,DrawerMenuControllerDelegate,UITa
         
         mes = self.dataArray[indexPath.row]
         
-        cell.mes = mes
+//        cell.mes = mes
         
         return cell
     }
