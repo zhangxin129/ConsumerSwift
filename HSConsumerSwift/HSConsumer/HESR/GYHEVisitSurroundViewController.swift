@@ -8,12 +8,21 @@
 
 import UIKit
 
-class GYHEVisitSurroundViewController: UIViewController {
+class GYHEVisitSurroundViewController: UIViewController,UITextFieldDelegate {
+    
+    
+    var searchTF : UITextField?
+    
     
     override func viewWillAppear(animated: Bool) {
         
         self.navigationController?.navigationBar.barTintColor = UIColor .orangeColor()
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        self.searchTF?.enabled = true
     }
 
     override func viewDidLoad() {
@@ -21,33 +30,45 @@ class GYHEVisitSurroundViewController: UIViewController {
 
         self.view.backgroundColor = UIColor .lightGrayColor()
         
-        let searchTF = UITextField(frame : CGRectMake(0, 0, 200, 30))
+        self.searchTF = UITextField(frame : CGRectMake(0, 0, 200, 30))
         
-            searchTF.borderStyle = UITextBorderStyle.RoundedRect
+            self.searchTF!.borderStyle = UITextBorderStyle.RoundedRect
         
-        searchTF.text = "搜索"
+        self.searchTF!.text = "搜索"
         
-        searchTF.textColor = UIColor .whiteColor()
+        self.searchTF!.textColor = UIColor .whiteColor()
         
-        searchTF.backgroundColor = UIColor .brownColor()
+        self.searchTF!.backgroundColor = UIColor .brownColor()
         
         let leftView = UIImageView(frame : CGRectMake(10, 2, 20,20))
         
             leftView.image = UIImage (named: "gyhe_food_search")
         
-        searchTF.leftView = leftView
+        self.searchTF!.leftView = leftView
         
-        searchTF.leftViewMode = UITextFieldViewMode.Always
+        self.searchTF!.leftViewMode = UITextFieldViewMode.Always
+
+        self.searchTF!.delegate = self
         
         self.navigationItem.titleView = searchTF
         
     }
     
-    func searchAction() -> Void {
+    func textFieldDidBeginEditing(textField: UITextField) -> Void {
         
-        print("搜索")
+        textField.enabled = false
         
+        let ctl = UIViewController()
+        
+        ctl.view.backgroundColor = UIColor .redColor()
+        
+        self.navigationController!.pushViewController(ctl, animated: true)
+        
+            print("搜索")
+        
+    
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
