@@ -19,8 +19,6 @@ class GYHESRTakeOutTableViewCell: UITableViewCell {
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        self.contentView.backgroundColor = UIColor .grayColor()
-        
         self .setup()
         
     }
