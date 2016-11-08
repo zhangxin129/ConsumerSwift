@@ -42,7 +42,7 @@ class GYHESRTakeOutTableViewCell: UITableViewCell {
         
         takeOutBtn .setImage(UIImage (named: "gy_he_back_arrow"), forState: UIControlState.Normal)
         
-        takeOutBtn .imageEdgeInsets = UIEdgeInsetsMake(0,takeOutBtn.frame.size.width-30, 0, 0)
+        takeOutBtn .imageEdgeInsets = UIEdgeInsetsMake(0,takeOutBtn.frame.size.width-20, 0, 0)
         
         takeOutBtn.titleEdgeInsets = UIEdgeInsetsMake(0,-takeOutBtn.frame.size.width+100, 0, 0)
         

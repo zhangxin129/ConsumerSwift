@@ -66,9 +66,15 @@ class GYHEVisitSurroundViewController: UIViewController,UITextFieldDelegate,UITa
 
         let leftBtn = UIButton(type : UIButtonType.Custom)
         
-        leftBtn.frame = CGRectMake(0, 0, 40, 40)
+        leftBtn.frame = CGRectMake(0, 0, 60, 40)
         
         leftBtn .setTitle("深圳", forState: UIControlState.Normal)
+        
+        leftBtn .setImage(UIImage (named: "gyhd_down_icon"), forState: UIControlState.Normal)
+        
+        leftBtn.imageEdgeInsets = UIEdgeInsetsMake(0, 50, 0, 0)
+        
+        leftBtn.titleEdgeInsets = UIEdgeInsetsMake(0, -50, 0, 0)
         
         let  leftItem = UIBarButtonItem(customView : leftBtn)
         
