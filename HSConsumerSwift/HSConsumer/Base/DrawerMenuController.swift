@@ -205,7 +205,7 @@ class DrawerMenuController: UIViewController ,UIGestureRecognizerDelegate {
         self.view.addSubview(mainContentView!)
         blackCoverView = UIView(frame: self.view.bounds)
         mainContentView!.addSubview(blackCoverView!)
-        blackCoverView!.backgroundColor = UIColor.blackColor()
+        blackCoverView!.backgroundColor = UIColor.clearColor()
         blackCoverView!.alpha = 0
         blackCoverView!.hidden = true
     }
