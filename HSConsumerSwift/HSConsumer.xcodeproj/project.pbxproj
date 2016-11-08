@@ -17,6 +17,8 @@
 		183E86E01DC72D9100C80ED6 /* CustomMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E86DD1DC72D9100C80ED6 /* CustomMenuController.swift */; };
 		183E86E11DC72D9100C80ED6 /* DrawerMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E86DE1DC72D9100C80ED6 /* DrawerMenuController.swift */; };
 		183E86E21DC72D9100C80ED6 /* DrawerMenuExplain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E86DF1DC72D9100C80ED6 /* DrawerMenuExplain.swift */; };
+		187A60911DD1D4250067113E /* GYHESRMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A60901DD1D4250067113E /* GYHESRMainTableViewCell.swift */; };
+		187A60931DD1EC4C0067113E /* GYHESRTakeOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A60921DD1EC4C0067113E /* GYHESRTakeOutTableViewCell.swift */; };
 		18E7CA451DC6F5C90025FED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CA441DC6F5C90025FED0 /* AppDelegate.swift */; };
 		18E7CA4C1DC6F5C90025FED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E7CA4B1DC6F5C90025FED0 /* Assets.xcassets */; };
 		18E7CA4F1DC6F5C90025FED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E7CA4D1DC6F5C90025FED0 /* LaunchScreen.storyboard */; };
@@ -52,6 +54,8 @@
 		183E86DD1DC72D9100C80ED6 /* CustomMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMenuController.swift; sourceTree = "<group>"; };
 		183E86DE1DC72D9100C80ED6 /* DrawerMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerMenuController.swift; sourceTree = "<group>"; };
 		183E86DF1DC72D9100C80ED6 /* DrawerMenuExplain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerMenuExplain.swift; sourceTree = "<group>"; };
+		187A60901DD1D4250067113E /* GYHESRMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHESRMainTableViewCell.swift; sourceTree = "<group>"; };
+		187A60921DD1EC4C0067113E /* GYHESRTakeOutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHESRTakeOutTableViewCell.swift; sourceTree = "<group>"; };
 		18E7CA411DC6F5C90025FED0 /* HSConsumer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSConsumer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E7CA441DC6F5C90025FED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E7CA4B1DC6F5C90025FED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,7 +114,8 @@
 		1830F4891DC869360099ECE9 /* HESR */ = {
 			isa = PBXGroup;
 			children = (
-				1830F48A1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift */,
+				187A608F1DD1D3EE0067113E /* Controller */,
+				187A608E1DD1D3E30067113E /* View */,
 			);
 			path = HESR;
 			sourceTree = "<group>";
@@ -149,6 +154,23 @@
 				183E86DF1DC72D9100C80ED6 /* DrawerMenuExplain.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		187A608E1DD1D3E30067113E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				187A60901DD1D4250067113E /* GYHESRMainTableViewCell.swift */,
+				187A60921DD1EC4C0067113E /* GYHESRTakeOutTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		187A608F1DD1D3EE0067113E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1830F48A1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		18E7CA381DC6F5C90025FED0 = {
@@ -341,6 +363,8 @@
 				18E7CA451DC6F5C90025FED0 /* AppDelegate.swift in Sources */,
 				1830F48D1DC869360099ECE9 /* GYHDMainViewController.swift in Sources */,
 				183E86E01DC72D9100C80ED6 /* CustomMenuController.swift in Sources */,
+				187A60931DD1EC4C0067113E /* GYHESRTakeOutTableViewCell.swift in Sources */,
+				187A60911DD1D4250067113E /* GYHESRMainTableViewCell.swift in Sources */,
 				1830F48F1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift in Sources */,
 				1830F4921DC887AC0099ECE9 /* GYHSloginViewController.swift in Sources */,
 				1830F48E1DC869360099ECE9 /* GYHEEasyBuyViewController.swift in Sources */,
