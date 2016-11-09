@@ -19,6 +19,9 @@
 		183E86E21DC72D9100C80ED6 /* DrawerMenuExplain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E86DF1DC72D9100C80ED6 /* DrawerMenuExplain.swift */; };
 		187A60911DD1D4250067113E /* GYHESRMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A60901DD1D4250067113E /* GYHESRMainTableViewCell.swift */; };
 		187A60931DD1EC4C0067113E /* GYHESRTakeOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A60921DD1EC4C0067113E /* GYHESRTakeOutTableViewCell.swift */; };
+		18C33DC61DD31445008B220C /* GYHEEBMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C33DC51DD31445008B220C /* GYHEEBMainTableViewCell.swift */; };
+		18C33DCA1DD34E8D008B220C /* GYHEEBMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C33DC91DD34E8D008B220C /* GYHEEBMainCollectionViewCell.swift */; };
+		18C33DCC1DD34EC5008B220C /* GYHEEBHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C33DCB1DD34EC5008B220C /* GYHEEBHeaderCollectionReusableView.swift */; };
 		18E7CA451DC6F5C90025FED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CA441DC6F5C90025FED0 /* AppDelegate.swift */; };
 		18E7CA4C1DC6F5C90025FED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E7CA4B1DC6F5C90025FED0 /* Assets.xcassets */; };
 		18E7CA4F1DC6F5C90025FED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E7CA4D1DC6F5C90025FED0 /* LaunchScreen.storyboard */; };
@@ -56,6 +59,9 @@
 		183E86DF1DC72D9100C80ED6 /* DrawerMenuExplain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerMenuExplain.swift; sourceTree = "<group>"; };
 		187A60901DD1D4250067113E /* GYHESRMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHESRMainTableViewCell.swift; sourceTree = "<group>"; };
 		187A60921DD1EC4C0067113E /* GYHESRTakeOutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHESRTakeOutTableViewCell.swift; sourceTree = "<group>"; };
+		18C33DC51DD31445008B220C /* GYHEEBMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHEEBMainTableViewCell.swift; sourceTree = "<group>"; };
+		18C33DC91DD34E8D008B220C /* GYHEEBMainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHEEBMainCollectionViewCell.swift; sourceTree = "<group>"; };
+		18C33DCB1DD34EC5008B220C /* GYHEEBHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHEEBHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		18E7CA411DC6F5C90025FED0 /* HSConsumer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSConsumer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E7CA441DC6F5C90025FED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E7CA4B1DC6F5C90025FED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,7 +112,8 @@
 		1830F4871DC869360099ECE9 /* HEEB */ = {
 			isa = PBXGroup;
 			children = (
-				1830F4881DC869360099ECE9 /* GYHEEasyBuyViewController.swift */,
+				18C33DC81DD3145D008B220C /* View */,
+				18C33DC71DD31451008B220C /* Controller */,
 			);
 			path = HEEB;
 			sourceTree = "<group>";
@@ -171,6 +178,24 @@
 				1830F48A1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		18C33DC71DD31451008B220C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1830F4881DC869360099ECE9 /* GYHEEasyBuyViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		18C33DC81DD3145D008B220C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18C33DC51DD31445008B220C /* GYHEEBMainTableViewCell.swift */,
+				18C33DC91DD34E8D008B220C /* GYHEEBMainCollectionViewCell.swift */,
+				18C33DCB1DD34EC5008B220C /* GYHEEBHeaderCollectionReusableView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		18E7CA381DC6F5C90025FED0 = {
@@ -360,11 +385,14 @@
 				183E86D71DC72C9D00C80ED6 /* RootViewController.swift in Sources */,
 				1830F4901DC869360099ECE9 /* GYHSMainViewController.swift in Sources */,
 				183E86E11DC72D9100C80ED6 /* DrawerMenuController.swift in Sources */,
+				18C33DCA1DD34E8D008B220C /* GYHEEBMainCollectionViewCell.swift in Sources */,
 				18E7CA451DC6F5C90025FED0 /* AppDelegate.swift in Sources */,
 				1830F48D1DC869360099ECE9 /* GYHDMainViewController.swift in Sources */,
 				183E86E01DC72D9100C80ED6 /* CustomMenuController.swift in Sources */,
+				18C33DC61DD31445008B220C /* GYHEEBMainTableViewCell.swift in Sources */,
 				187A60931DD1EC4C0067113E /* GYHESRTakeOutTableViewCell.swift in Sources */,
 				187A60911DD1D4250067113E /* GYHESRMainTableViewCell.swift in Sources */,
+				18C33DCC1DD34EC5008B220C /* GYHEEBHeaderCollectionReusableView.swift in Sources */,
 				1830F48F1DC869360099ECE9 /* GYHEVisitSurroundViewController.swift in Sources */,
 				1830F4921DC887AC0099ECE9 /* GYHSloginViewController.swift in Sources */,
 				1830F48E1DC869360099ECE9 /* GYHEEasyBuyViewController.swift in Sources */,
