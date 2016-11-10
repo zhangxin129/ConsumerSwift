@@ -27,20 +27,19 @@ class GYHEEBHeaderCollectionReusableView: UICollectionReusableView {
         
         self .addSubview(imgView)
         
-        self.label = UILabel(frame : CGRectMake(CGRectGetMaxX(imgView.frame)+5,10,200,40))
+        self.label = UILabel(frame : CGRectMake(CGRectGetMaxX(imgView.frame)+5,5,200,30))
         
         self.label?.font = UIFont .systemFontOfSize(14.0)
+        
         self .addSubview(self.label!)
         
-        let arrowImg :UIImageView = UIImageView(frame : CGRectMake(CGRectGetMaxX(self.label!.frame)+5, 10, 20, 30))
+        let arrowImg :UIImageView = UIImageView(frame : CGRectMake(CGRectGetMaxX(self.label!.frame)+5, 15, 15, 20))
         
-        arrowImg.image = UIImage (named: "gyhd_cell_arrow_right_icon")
+        arrowImg.image = UIImage (named:"gyhd_cell_arrow_right_icon")
         
         self .addSubview(arrowImg)
         
     }
-    
-    
     
     required init?(coder aDecoder: NSCoder) {
         

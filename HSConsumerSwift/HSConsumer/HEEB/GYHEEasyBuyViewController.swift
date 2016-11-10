@@ -126,7 +126,7 @@ class GYHEEasyBuyViewController: UIViewController,UITableViewDelegate,UITableVie
         
         self.colletionView = UICollectionView(frame: CGRectMake(CGRectGetMaxX(self.tableView!.frame),64, self.view.frame.size.width-CGRectGetMaxX(self.tableView!.frame), self.view.frame.size.height-113),collectionViewLayout : layOut)
         
-        self.colletionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        self.colletionView!.registerClass(GYHEEBMainCollectionViewCell.self, forCellWithReuseIdentifier: "GYHEEBMainCollectionViewCell")
         
         self.colletionView!.registerClass(GYHEEBHeaderCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
         
@@ -223,9 +223,17 @@ class GYHEEasyBuyViewController: UIViewController,UITableViewDelegate,UITableVie
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell : UICollectionViewCell = (colletionView?.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath))!
+        let cell : GYHEEBMainCollectionViewCell = (collectionView .dequeueReusableCellWithReuseIdentifier("GYHEEBMainCollectionViewCell", forIndexPath: indexPath)) as! GYHEEBMainCollectionViewCell
         
         cell.backgroundColor = UIColor .orangeColor()
+        
+         let model : detail = self.collectionDataArray[indexPath.section]
+        
+        let catograyModel : catogray = model.datas[indexPath.item]
+        
+        cell.imgView!.image = UIImage (named: catograyModel.icon!)
+        
+        cell.label!.text = catograyModel.title
         
         return cell
         
@@ -237,12 +245,16 @@ class GYHEEasyBuyViewController: UIViewController,UITableViewDelegate,UITableVie
         //某个Cell被选择的事件处理
     }
 
-//    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-//        
-//        
-//        
-//        
-//    }
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        
+        let headView : GYHEEBHeaderCollectionReusableView = collectionView .dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "header", forIndexPath: indexPath)as!GYHEEBHeaderCollectionReusableView
+        
+        let model : detail = self.collectionDataArray[indexPath.section]
+        
+        headView.label?.text = model.title
+        
+        return headView
+    }
     
 
     override func didReceiveMemoryWarning() {
